@@ -14,5 +14,6 @@ De Mercado libre nos gustó su Main y lo modificamos para que se adapte a nuestr
 Link: https://www.mercadolibre.com
 
 Quienes somos:
+
 En nuestra empresa somos un grupo de emprendedores Argentinos que se especializa en la venta de aplicaciones digitales para todas las plataformas.
 Buscamos generar un sistema de mercado amigable y seguro, brindando nuestro servicio las 24hs.
