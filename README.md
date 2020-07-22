@@ -13,7 +13,6 @@ Link: https://www.hyperxgaming.com/LATAM
 De Mercado libre nos gustó su Main y lo modificamos para que se adapte a nuestra idea.
 Link: https://www.mercadolibre.com
 
-Nuestra empresa:
-
-Espiritu, objetivo
-
+Quienes somos:
+En nuestra empresa somos un grupo de emprendedores Argentinos que se especializa en la venta de aplicaciones digitales para todas las plataformas.
+Buscamos generar un sistema de mercado amigable y seguro, brindando nuestro servicio las 24hs.
