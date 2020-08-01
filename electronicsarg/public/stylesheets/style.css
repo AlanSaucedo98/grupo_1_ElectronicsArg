@@ -1,8 +1,46 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+/*GENERAL*/
+body{
+  font-family: Roboto Slab;
+  font-weight: 300;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+li{
+  list-style: none;
+
+}
+/*CABECERA*/
+header{
+  height: 20vh;
+  background-color: aqua;
+  display: flex;
 }
 
-a {
-  color: #00B7FF;
+.logo img{
+  width: 100px;
+  height: 100px;
+}
+header .recursos{
+  display: flex;
+}
+header .botonlogin{
+  text-align: center;
+}
+header .botonlogin a{
+  border: 1px solid black;
+  padding-left: 100px;
+}
+header .nav{
+ display: flex;
+ text-align: center;
+}
+header .nav a{
+  border: 1px solid black;
+  border-radius: 10px;
 }
