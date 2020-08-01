@@ -18,7 +18,7 @@ li{
 /*CABECERA*/
 header{
   height: 20vh;
-  background-color: aqua;
+  background-color:white;
   display: flex;
 }
 
@@ -28,19 +28,33 @@ header{
 }
 header .recursos{
   display: flex;
+  justify-content: flex-end;
+}
+header .recursos a{
+  
+  margin-left: 10px;
+  border-right: 1px solid gray;
+  
 }
 header .botonlogin{
   text-align: center;
+  margin-left: 20vh;
 }
 header .botonlogin a{
   border: 1px solid black;
-  padding-left: 100px;
+  
 }
 header .nav{
  display: flex;
- text-align: center;
+ justify-content: space-around;
+ padding-top: 20px;
 }
 header .nav a{
+  align-content: center;
   border: 1px solid black;
   border-radius: 10px;
+  margin-right: 20vh;
+}
+header .buscador{
+  margin-left: 20vh;
 }
