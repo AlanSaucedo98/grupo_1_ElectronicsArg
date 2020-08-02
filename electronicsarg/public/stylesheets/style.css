@@ -17,9 +17,10 @@ li{
 }
 /*CABECERA*/
 header{
-  height: 20vh;
-  background-color:teal;
+  height: 200px;
+  background-color:white;
   display: flex;
+  box-shadow: 0 10px 5px #888888;
 }
 
 .logo img{
@@ -68,18 +69,40 @@ header .nav a{
 }
 header .buscador{
   margin-left: 20%;
+  margin-top: 10px;
 }
-/*PRODUCTOS*/
+/*PRODUCTOS y CARRUSEL*/
+.carrusel{
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.carrusel h2{
+  color: white;
+}
 .contenido{
-  background-color: white;
+  background-color: black;
   border-radius: 10px;
   text-align: center;
+  color: white;
+  margin: 1vh;
 }
-.contenido img{
-  width: 50%;
-}
+
 .menuhome{
-margin-top: 50px;
+margin-top: 50px;;
+}
+.menuhome h2{
+  text-align: center;
+}
+.menuhome .contenido{
+  border: 1px solid white;
+  box-shadow: 0 10px 5px #888888;
+}
+.productos{
+  display: flex;
+}
+.productos .contenido img{
+  width: 25%;
 }
 
 
@@ -111,4 +134,7 @@ footer{
   padding: 20px 0;
   text-align: center;
   color: var(---grisOscuro);
+}
+.recom{
+  text-align: center;
 }
