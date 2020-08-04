@@ -15,17 +15,20 @@ li{
   list-style: none;
 
 }
+ul{
+  padding: 0px;
+}
 /*CABECERA*/
 header{
-  height: 200px;
+  
   background-color:white;
   display: flex;
   box-shadow: 0 10px 5px #888888;
 }
 
 .logo img{
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
 }
 header .recursos{
   display: flex;
@@ -35,13 +38,13 @@ header .recursos a{
   
   margin-left: 10px;
   border-right: 1px solid black;
-  color: white;
+  color: black;
   
 }
 header .botonlogin{
   
   text-align: center;
-  margin-left: 20%;
+  margin-left: 35%;
   margin-top: 10px;
 }
 header .botonlogin a{
@@ -57,25 +60,25 @@ header .nav a{
   background-color: black;
   color: white;
 }
+
 header .nav .dropdown a{
   background-color: black;
   color: white;
 }
 header .nav a{
   align-content: center;
-  border: 1px solid black;
-  border-radius: 10px;
-  margin-right: 20vh;
+  border-bottom: 1px solid white;
 }
 header .buscador{
-  margin-left: 20%;
+  margin-left: 30px;
   margin-top: 10px;
 }
 /*PRODUCTOS y CARRUSEL*/
 .carrusel{
-  background-color: black;
+  
   padding: 20px;
-  border-radius: 10px;
+  
+  display: none;
 }
 .carrusel h2{
   color: white;
@@ -85,7 +88,7 @@ header .buscador{
   border-radius: 10px;
   text-align: center;
   color: white;
-  margin: 1vh;
+  margin:10px;
 }
 
 .menuhome{
@@ -99,7 +102,7 @@ margin-top: 50px;;
   box-shadow: 0 10px 5px #888888;
 }
 .productos{
-  display: flex;
+  display: inline;
 }
 .productos .contenido img{
   width: 25%;
@@ -137,4 +140,29 @@ footer{
 }
 .recom{
   text-align: center;
+}
+@media(min-width:768px){
+  /*HEADER*/
+  .carrusel{
+    display: inline;
+  }
+  header .botonlogin{
+  
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 10px;
+  }
+  /*MENU*/
+  .productos{
+    display: flex;
+    max-width: 100%;
+  }
+  .productos .contenido img{
+    width: 90%;
+  }
+  
+
+
+
+
 }
