@@ -4,12 +4,13 @@
 }
 /*GENERAL*/
 body{
+  background-color: black;
   font-family: Roboto Slab;
   font-weight: 300;
 }
 a{
   text-decoration: none;
-  color: black;
+  
 }
 li{
   list-style: none;
@@ -21,14 +22,14 @@ ul{
 /*CABECERA*/
 header{
   
-  background-color:white;
+  background-color:black;
   display: flex;
-  box-shadow: 0 10px 5px #888888;
+  
 }
 
 .logo img{
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
 }
 header .recursos{
   display: flex;
@@ -37,8 +38,7 @@ header .recursos{
 header .recursos a{
   
   margin-left: 10px;
-  border-right: 1px solid black;
-  color: black;
+  color: white;
   
 }
 header .botonlogin{
@@ -48,7 +48,7 @@ header .botonlogin{
   margin-top: 10px;
 }
 header .botonlogin a{
-  border: 1px solid black;
+  border: 1px solid white;
   
 }
 header .nav{
@@ -57,7 +57,9 @@ header .nav{
  padding-top: 20px;
 }
 header .nav a{
-  background-color: black;
+  color: white;
+}
+header .nav i{
   color: white;
 }
 
@@ -84,29 +86,24 @@ header .buscador{
   color: white;
 }
 .contenido{
-  background-color: black;
-  border-radius: 10px;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 10px ;
+  text-align: center;
+  color: white; 
+}
+.productosrec{
+  justify-content: center;
+}
+h2{
   text-align: center;
   color: white;
-  margin:10px;
+}
+.dropdown-menu {
+  background-color: black;
 }
 
-.menuhome{
-margin-top: 50px;;
-}
-.menuhome h2{
-  text-align: center;
-}
-.menuhome .contenido{
-  border: 1px solid white;
-  box-shadow: 0 10px 5px #888888;
-}
-.productos{
-  display: inline;
-}
-.productos .contenido img{
-  width: 25%;
-}
+
 
 
 
@@ -146,11 +143,22 @@ footer{
   .carrusel{
     display: inline;
   }
-  header .botonlogin{
+  li .logoshome i{
+    position: relative;
+    left: 15%;
+  }
   
+  header .botonlogin{
+    margin-left: 0;
     text-align: center;
-    margin-left: 25%;
     margin-top: 10px;
+  }
+  header .nav {
+   padding: 0;
+  }
+  header .nav a{
+    border-bottom: 0;
+    margin-right: 10vh;
   }
   /*MENU*/
   .productos{
