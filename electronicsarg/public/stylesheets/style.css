@@ -140,6 +140,9 @@ footer{
 }
 @media(min-width:768px){
   /*HEADER*/
+  header .buscador input{
+    width: 90%;
+  }
   .carrusel{
     display: inline;
   }
