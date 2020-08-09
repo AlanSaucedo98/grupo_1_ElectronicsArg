@@ -174,3 +174,99 @@ footer{
 
 
 }
+
+/*FORMULARIO DE REGISTRO*/
+.principal {
+  background-color: #232020;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding: 2em;
+  justify-content: center;
+
+}
+.item1 {
+  background-color: slategrey;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.item2 {
+  width: 60%;
+  padding-top: 15px;
+  overflow: hidden;
+  text-align: center;
+  background-color: black;
+  color: white;
+  
+}
+#Formu {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 0px;
+}
+#itemimg {
+  padding: 0px;
+  width: 100%;
+  background-color: gray;
+  
+}
+.imag {
+  width: 100%;
+  height: 100%;
+}
+.control {
+  border: none;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-left: solid 2px #810303;
+  border-bottom: solid 2px #810303;
+  background-color: black ;
+  outline: none;
+  color: blanchedalmond;
+  box-shadow: 0 0 20px 0 rgba(129, 61, 61, .3);
+  
+}
+
+.controlBoton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0 0 20px 0 rgba(250, 250, 250, .3);
+  background-color: #A19D9D;
+  border-radius: 10px;
+}
+
+.redi {
+  color: white;
+  margin: 1em;;
+}
+
+.subtitulo{
+  color: #810303;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+.terminos { 
+   font-size: 10px;
+   margin-top: 20px;
+}
+
+@media(max-width:480px) {
+  .item1{
+    width: 100%;
+    margin: 0px;
+  }
+
+}
