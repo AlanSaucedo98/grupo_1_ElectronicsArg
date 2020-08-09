@@ -111,6 +111,7 @@ h2{
 footer{
   padding: 10px;
   background-image: url("../images/fondodeprueba.jpg");
+  color: white;
 }
 .footer article{
   display: flex;
@@ -129,12 +130,11 @@ footer{
   margin: 20px 0;
 }
 .footer .copy{
-  border-top: 1px solid var(--color-grisClaro);
-  border-bottom: 1px solid var(--color-grisClaro);
   padding: 20px 0;
   text-align: center;
-  color: var(---grisOscuro);
+  color: white;
 }
+
 .recom{
   text-align: center;
 }
