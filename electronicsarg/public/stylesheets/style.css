@@ -7,6 +7,7 @@ body{
   background-color: black;
   font-family: Roboto Slab;
   font-weight: 300;
+  color: white;
 }
 a{
   text-decoration: none;
@@ -111,6 +112,7 @@ h2{
 footer{
   padding: 10px;
   background-image: url("../images/fondodeprueba.jpg");
+  color: white;
 }
 .footer article{
   display: flex;
@@ -129,17 +131,19 @@ footer{
   margin: 20px 0;
 }
 .footer .copy{
-  border-top: 1px solid var(--color-grisClaro);
-  border-bottom: 1px solid var(--color-grisClaro);
   padding: 20px 0;
   text-align: center;
-  color: var(---grisOscuro);
+  color: white;
 }
+
 .recom{
   text-align: center;
 }
 @media(min-width:768px){
   /*HEADER*/
+  header .buscador input{
+    width: 90%;
+  }
   .carrusel{
     display: inline;
   }
@@ -173,4 +177,119 @@ footer{
 
 
 
+}
+
+/*FORMULARIO DE REGISTRO*/
+.principal {
+  background-color: #232020;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding: 2em;
+  justify-content: center;
+
+}
+.item1 {
+  background-color: slategrey;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-wrap: wrap;
+  padding: 0px;
+}
+.item2 {
+  width: 60%;
+  padding-top: 15px;
+  overflow: hidden;
+  text-align: center;
+  background-color: black;
+  color: white;
+  
+}
+#Formu {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  padding: 0px;
+}
+#itemimg {
+  padding: 0px;
+  width: 100%;
+  background-color: gray;
+  
+}
+.imag {
+  width: 100%;
+  height: 100%;
+}
+.control {
+  border: none;
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-left: solid 2px #810303;
+  border-bottom: solid 2px #810303;
+  background-color: black ;
+  outline: none;
+  color: blanchedalmond;
+  box-shadow: 0 0 20px 0 rgba(129, 61, 61, .3);
+  
+}
+
+.controlBoton {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  outline: none;
+  box-shadow: 0 0 20px 0 rgba(250, 250, 250, .3);
+  background-color: #A19D9D;
+  border-radius: 10px;
+}
+
+.redi {
+  color: white;
+  margin: 1em;;
+}
+
+.subtitulo{
+  color: #810303;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+.terminos { 
+   font-size: 10px;
+   margin-top: 20px;
+}
+
+@media(max-width:480px) {
+  .item1{
+    width: 100%;
+    margin: 0px;
+  }
+
+}
+/*DETALLES DEL PRODUCTO*/
+.breadcrumb{
+  background-color: black;
+}
+.breadcrumb a{
+  color: white;
+}
+.breadcrumb-item.active {
+  color:white;
+}
+
+.imagendet img{
+  width: 70px;
+  height: 70px;
+}
+.historia{
+  background-color: darkslategray;
+  border-radius: 10px;
 }
