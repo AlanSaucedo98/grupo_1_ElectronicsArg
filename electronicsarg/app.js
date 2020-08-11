@@ -27,9 +27,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter, registerRouter, productAddRouter);
+app.use('/', indexRouter);
 app.use("/detalles",indexRouter)
-/*app.use('/', registerRouter)*/
 app.use('/registrarse', registerRouter)
 app.use('/cargadeproductos', productAddRouter)
 app.use('/users', usersRouter);
