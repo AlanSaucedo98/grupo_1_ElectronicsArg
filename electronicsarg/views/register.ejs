@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Registrarse</title>
+  <title><%= title %></title>
   <link rel="stylesheet" href="stylesheets/style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 <body>
   <header>
@@ -19,23 +20,25 @@
         </div>
       </div>
       <div class="row">
-        <div class=" col-1 logo">
-          <a href=""><img src="images/logoEA.png" alt=""></a>
+        <div class=" col-1 col-md-2 logo">
+          <a href=""><img src="/images/logosinfondo.png" alt=""></a>
         </div>
-        <div class="col-10 col-md-5 buscador">
-          <form action="">
-            <input type="text" placeholder="Buscar productos, marcas y más">
-            <button type="submit"><i class="fas fa-search"></i>Buscar</button>
-          </form>
-        </div>
-        <div class=" col-1 botonlogin">
+          <div class="col-10 col-md-7 buscador">
+            <form action="">
+              <input type="text" placeholder="Buscar productos, marcas y más ...">
+              <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            </div>
+          <div class=" col-1  col-md-2 botonlogin">
           <button type="button" class="btn btn-secondary">LOGIN</button>
-        </div>
-        <div class="col-12 col-md-12 col-lg-12 nav">
+          </div>
+      </div>
+          
+         <div class="col-12 col-md-12 col-lg-12 nav">
           <nav class="navbar-expand-md">
             <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-              <ul class="menu navbar-nav mr-auto">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul class="menu navbar-nav mr-auto">
                 <li class="nav-item active">
                   <ul>
                     <li class="nav-item dropdown">
@@ -43,7 +46,7 @@
                         Categorias
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Terror</a>
+                        <a class="dropdown-item" href="#">TERROR</a>
                         <a class="dropdown-item" href="#">RPG</a>
                         <a class="dropdown-item" href="#">INFANTILES</a>
                       </div>
@@ -58,13 +61,16 @@
                 </li>
                 
               </ul>
-            </ul>
-          </div>
-        </nav>
-        <!-- #region -->
-        
+              <li class="logoshome">
+                <i class="fas fa-user-cog"></i>
+                <i class="fas fa-shopping-cart"></i>
+                
+              </li>
+            </div>
+            
+          </nav>
       </div> 
-    </div>
+    
   </header>
   <div class="principal" id="">
     <div class="item1" id="">
