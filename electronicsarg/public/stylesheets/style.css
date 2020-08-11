@@ -5,7 +5,7 @@
 /*GENERAL*/
 body{
   background-color: black;
-  font-family: Roboto Slab;
+ 
   font-weight: 300;
   color: white;
 }
@@ -44,14 +44,11 @@ header .recursos a{
 }
 header .botonlogin{
   
-  text-align: center;
+
   margin-left: 35%;
   margin-top: 10px;
 }
-header .botonlogin a{
-  border: 1px solid white;
-  
-}
+
 header .nav{
  display: flex;
  justify-content: space-around;
@@ -76,6 +73,9 @@ header .buscador{
   margin-left: 30px;
   margin-top: 10px;
 }
+header .buscador form{
+  padding-left: 50px;
+}
 /*PRODUCTOS y CARRUSEL*/
 .carrusel{
   
@@ -84,6 +84,10 @@ header .buscador{
   display: none;
 }
 .carrusel h2{
+  color: white;
+}
+section a .btnvermas{
+  background-color: darkslategray;
   color: white;
 }
 .contenido{
@@ -141,15 +145,18 @@ footer{
 }
 @media(min-width:768px){
   /*HEADER*/
-  header .buscador input{
-    width: 90%;
-  }
   .carrusel{
     display: inline;
   }
   li .logoshome i{
     position: relative;
     left: 15%;
+  }
+  header .buscador input{
+    width: 90%;
+  }
+  header .buscador form{
+    padding-left: 0;
   }
   
   header .botonlogin{
@@ -292,4 +299,19 @@ footer{
 .historia{
   background-color: darkslategray;
   border-radius: 10px;
+}
+.detprod{
+  text-align: center;
+}
+.detprod .req{
+  background-color: dimgrey;
+  border-radius: 10px;
+}
+article .comprar{
+  
+  left: 30%;
+  padding-bottom: 20px;
+}
+article .comprar button{
+  background-color:darkslategray;
 }
