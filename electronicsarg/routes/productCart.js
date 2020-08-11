@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
- /* Funcion que renderiza Al formulario de registro. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('productAdd', { title: 'Formulario de Registro' });
+  res.render('productCart', { title: 'ElectronicsArg' });
 });
 
 module.exports = router;
