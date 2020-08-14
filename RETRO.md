@@ -1,26 +1,26 @@
 ## RETROSPECTIVA
 
-### Seguir Haciendo:
+### Seguir haciendo:
 
-- Las Reuniones
-- Lluvia de ideas
+- Las reuniones.
+- Lluvia de ideas.
 
-### Hacer Mas:
+### Hacer más:
 
-- Dedicarle mas horas semanales
-- Mas reuniones semanales
-- Buscar mas inspiracion de otras paginas 
-- Mas compromiso
+- Dedicarle más horas semanales.
+- Más reuniones semanales.
+- Buscar más inspiración de otras páginas.
+- Más compromiso.
 
-### Empezar a Hacer:
+### Empezar a hacer:
 
-- Compartir avances 
-- Minireuniones de 20 min para resolver los problemas grupales 
+- Compartir avances.
+- Minireuniones de 20 min para resolver los problemas grupales. 
 
 ### Dejar de hacer:
 
-- No prestarle mucha atencion a las consignas
+- No prestarle mucha atención a las consignas.
 
 ### Hacer menos:
 
-- No confiarse con el tiempo 
+- No confiarse con el tiempo.
