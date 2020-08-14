@@ -86,15 +86,24 @@ header .buscador form{
   color: white;
 }
 section a .btnvermas{
-  background-color: darkslategray;
+  background-color: black;
+  border-radius: 10px;
+  
   color: white;
+  border: 1px solid red ;
+  box-shadow: 0 0 20px 0 rgba(129, 61, 61, .3);
+
 }
 .contenido{
   justify-content: center;
-  border: 1px solid white;
+  
   border-radius: 10px ;
   text-align: center;
   color: white; 
+  
+}
+.titofertas{
+  padding-top: 40px;
 }
 .productosrec{
   justify-content: center;
@@ -116,6 +125,7 @@ footer{
   padding: 10px;
   background-image: url("../images/fondodeprueba.jpg");
   color: white;
+  box-shadow: 40px black ;
 }
 .footer article{
   display: flex;
@@ -296,14 +306,14 @@ footer{
   height: 70px;
 }
 .historia{
-  background-color: darkslategray;
+  box-shadow: 0 0 20px 0 rgba(250, 250, 250, .2);
   border-radius: 10px;
 }
 .detprod{
   text-align: center;
 }
 .detprod .req{
-  background-color: dimgrey;
+  
   border-radius: 10px;
 }
 article .comprar{
@@ -312,7 +322,9 @@ article .comprar{
   padding-bottom: 20px;
 }
 article .comprar button{
-  background-color:darkslategray;
+  border: 1px solid red ;
+  box-shadow: 0 0 20px 0 rgba(129, 61, 61, .3);
+ background-color:black ;
 }
 
 /*FORMULARIO PRODUCT.ADD*/
