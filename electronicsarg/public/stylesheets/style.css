@@ -314,3 +314,202 @@ article .comprar{
 article .comprar button{
   background-color:darkslategray;
 }
+
+/*FORMULARIO PRODUCT.ADD*/
+
+.item00{
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+
+}
+
+.item01 {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  border: rgb(206, 206, 206) 7px double;
+  margin: 1em;
+  justify-content: center;
+  
+  
+}
+
+#nav{
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  
+  padding-left: 0px;
+  
+}
+
+
+
+
+.itemB{
+  display: flex;
+  
+  flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    float: left;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    
+    
+}
+
+.Carga {
+  color: rgb(194, 200, 206);
+  margin: none;
+  display: flex;
+  background-color: black;
+  text-align: center;
+  padding: 8px;
+  height: 3%;
+  float: left;
+}
+
+.itemB2{
+  height: 100%;
+  width: 100%;
+  background-color: pink;
+  margin: 0px;
+
+
+}
+
+.ColumnaB1{
+  background-color: black;
+  color: #A19D9D;
+  align-self:stretch;
+  height: 100%;
+  padding: 7px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float: left;
+  
+}
+
+.ColumnaText{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.CuadrodeTexto {
+  height: 70px;
+  border: none;
+  border-left: #810303 solid 2px;
+  border-bottom: #810303 solid 2px;
+  background-color: black;
+  outline: none;
+  color: white;
+  box-shadow: 0 0 20px 0 rgba(150, 26, 26, 0.3);
+}
+
+.ColumnaB2{
+  background-color: black;
+  color: #A19D9D;
+  padding: 7px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  float: left;
+  height: 100%;
+  align-self:stretch;
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.itemB3{
+  height: auto;
+  width: 100%;
+  color: grey;
+  background-color: black;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.subitemB3 {
+  margin-top: 10px ;
+}
+
+.formuB{
+  height: 95%;
+  width: 100%;
+  float: left;
+  margin: 0px;
+  padding: 0px;
+  background-color: hotpink;
+  
+}
+
+.check {
+  float: left;
+  text-align: left;
+}
+
+
+
+.checkbox{
+  float: left;
+}
+#bordes{
+  border: none;
+  border-left: #810303 solid 2px;
+  border-bottom: #810303 solid 2px;
+  background-color: black;
+  outline: none;
+  color: white;
+  box-shadow: 0 0 20px 0 rgba(150, 26, 26, 0.3);
+}
+#titulo{
+  font-weight: bold;
+  color: white;
+  border-bottom:solid 2px white;
+  border-right: white solid 2px;
+}
+
+@media(min-width: 576px){
+  .ColumnaB1{
+  height: 520px;
+  }
+  .ColumnaB2{
+  height: 520px;
+
+  }
+  .item01{
+    width: 100%;
+  }
+  .item00{
+    padding: 0px;
+    margin: 0px;
+  }
+  .CuadrodeTexto{
+    height: 100px;
+  }
+  .ColumnaText{
+    margin: 3px;
+  }
+  .checkbox{
+    font-size: 13.5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    
+  }
+  #texto1{
+    height: 125px;
+  }
+  #Var{
+    flex-direction: column;
+  }
+}
