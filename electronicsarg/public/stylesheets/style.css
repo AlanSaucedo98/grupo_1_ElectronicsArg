@@ -639,27 +639,13 @@ div.col-md-6{
 }
 
 .img-fluid2 {
-  max-width: 30%;
+  max-width: 27%;
 }
 
 div .trash{
   display: flex;
   justify-content: flex-end;
 }
-
-.producto h6{
-  font-size: x-large;
-}
-
-}
-
-@media(min-width: 1024px){
-
-.detalle .producto .plat-price{
-  padding-block-end: 150px;
-  font-size: x-large;
-}
-  
 
 .producto h6{
   font-size: x-large;
