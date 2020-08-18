@@ -532,7 +532,6 @@ article .comprar button{
 
 
 .principal{
-  display: flex;
   background-color: #232020;
   color: whitesmoke;
 }
@@ -621,12 +620,17 @@ button.trash{
   padding: 6px;
 }
 
+.imag{
+  box-shadow: 0 0 20px 0 rgb(255 0 0 / 40%);
+}
+
 
 @media(min-width: 768px){
 
 .principal{
   justify-content: end;
   flex-wrap: nowrap;
+  padding: 6em;
 }
 
 div.col-md-6{
@@ -640,6 +644,11 @@ div.col-md-6{
 
 .img-fluid2 {
   max-width: 27%;
+}
+
+
+.imag{
+  width: 115%;
 }
 
 div .trash{
