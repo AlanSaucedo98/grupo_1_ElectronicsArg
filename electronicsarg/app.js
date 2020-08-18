@@ -32,6 +32,7 @@ app.use("/detalles",indexRouter)
 app.use('/registrarse', registerRouter)
 app.use('/cargadeproductos', productAddRouter)
 app.use('/users', usersRouter);
+app.use("/carrodecompras", productCartRouter)
 
 
 // catch 404 and forward to error handler
