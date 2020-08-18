@@ -530,9 +530,11 @@ article .comprar button{
 
 /* CARRO DE COMPRAS */
 
+
 .principal{
   display: flex;
   background-color: #232020;
+  color: whitesmoke;
 }
 
 div.fondo{
@@ -573,6 +575,7 @@ div .imagen{
   display: flex;
   max-width: 30%;
   box-shadow: 0 0 20px 0 rgb(255 0 0 / 40%);
+  padding-block-end: 20px;
 } 
 
 .detalle{
@@ -581,7 +584,6 @@ div .imagen{
 
 .detalle .producto{
   width: 68%;
-  text-align: end;
 }
 
 .detalle .producto .plat-price{
@@ -593,7 +595,8 @@ div .imagen{
 .detalle .producto .fa-windows{
   display: flex;
   align-items: center;
-  padding-block-end: 5px;
+  padding-top: 5px;
+  padding-block-end: 28px;
   padding-right: 6px;
   padding-left: 84px;
 }
@@ -608,9 +611,46 @@ div.juego{
 }
 
 div .trash{
-  padding-top: 22px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.trash{
+button.trash{
   border-radius: 50px;
+  padding: 6px;
+}
+
+
+@media(min-width: 768px){
+
+div.col-md-6{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.detalle .producto .plat-price{
+  padding-block-end: 150px;
+  font-size: x-large;
+}
+
+
+.producto h6{
+  font-size: x-large;
+}
+
+}
+
+@media(min-width: 1024px){
+
+.detalle .producto .plat-price{
+  padding-block-end: 150px;
+  font-size: x-large;
+}
+  
+
+.producto h6{
+  font-size: x-large;
+}
+
 }
