@@ -580,6 +580,8 @@ div .imagen{
 
 .detalle{
   display: flex;
+  flex-wrap: nowrap;
+  padding-block-end: 5px;
 } 
 
 .detalle .producto{
@@ -589,16 +591,12 @@ div .imagen{
 .detalle .producto .plat-price{
   display: flex;
   justify-content: space-between;
-  padding-block-end: 35px;
+  padding-block-end: 70px;
 }
 
 .detalle .producto .fa-windows{
   display: flex;
-  align-items: center;
-  padding-top: 5px;
-  padding-block-end: 28px;
-  padding-right: 6px;
-  padding-left: 84px;
+  padding-left: 40px;
 }
 
 div.juego{
@@ -608,6 +606,8 @@ div.juego{
 
 .producto h6{
   display: flex;
+  border-left: solid 2px #810303;
+  border-bottom: solid 2px #810303;
 }
 
 div .trash{
@@ -624,16 +624,28 @@ button.trash{
 
 @media(min-width: 768px){
 
+.principal{
+  justify-content: end;
+  flex-wrap: nowrap;
+}
+
 div.col-md-6{
   flex: 0 0 100%;
   max-width: 100%;
 }
 
 .detalle .producto .plat-price{
-  padding-block-end: 150px;
   font-size: x-large;
 }
 
+.img-fluid2 {
+  max-width: 30%;
+}
+
+div .trash{
+  display: flex;
+  justify-content: flex-end;
+}
 
 .producto h6{
   font-size: x-large;
