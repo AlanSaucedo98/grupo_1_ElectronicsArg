@@ -531,7 +531,8 @@ article .comprar button{
 /* CARRO DE COMPRAS */
 
 
-.principal{
+.carro{
+  padding: 7em;
   background-color: #232020;
   color: whitesmoke;
 }
@@ -563,12 +564,13 @@ div.fondo{
 
 .delete{
   border-radius: 50px;
-  max-width: 40%;}
+    max-width: 40%;
+}
 
 
 div .imagen{
   padding: 20px;
-  }
+}
 
 .img-fluid2{
   display: flex;
@@ -579,6 +581,7 @@ div .imagen{
 
 .detalle{
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   padding-block-end: 5px;
 } 
@@ -590,13 +593,9 @@ div .imagen{
 .detalle .producto .plat-price{
   display: flex;
   justify-content: space-between;
-  padding-block-end: 70px;
+  padding-block-end: 100px;
 }
 
-.detalle .producto .fa-windows{
-  display: flex;
-  padding-left: 40px;
-}
 
 div.juego{
   float: right;
@@ -613,6 +612,7 @@ div .trash{
   padding-top: 2px;
   display: flex;
   justify-content: flex-end;
+  padding-right: 10px;
 }
 
 button.trash{
@@ -624,14 +624,15 @@ button.trash{
   box-shadow: 0 0 20px 0 rgb(255 0 0 / 40%);
 }
 
+.total{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1em;
+  justify-content: space-between;
+}
 
 @media(min-width: 768px){
 
-.principal{
-  justify-content: end;
-  flex-wrap: nowrap;
-  padding: 6em;
-}
 
 div.col-md-6{
   flex: 0 0 100%;
@@ -643,12 +644,12 @@ div.col-md-6{
 }
 
 .img-fluid2 {
-  max-width: 27%;
+  max-width: 20%;
 }
 
 
 .imag{
-  width: 115%;
+  width: 100%;
 }
 
 div .trash{
@@ -656,8 +657,46 @@ div .trash{
   justify-content: flex-end;
 }
 
-.producto h6{
-  font-size: x-large;
+.h5, h5{
+  padding-right: 10px
 }
+
+
+}
+
+@media(min-width: 1024px){
+
+.producto h6{
+  font-size: 30px
+}
+
+.producto h5{
+  font-size: 30px;
+}
+
+.total h4{
+  font-size: 30px;
+}
+
+.detalle .producto .fa-windows, .detalle .producto .fa-playstation{
+  font-size: 35px;
+}
+
+}
+
+@media(min-width: 1440px){
+
+.producto h6{
+  font-size: 45px;
+}
+
+.producto h5{
+  font-size: 45px;
+}
+
+.total h4{
+  font-size: 45px;
+}
+
 
 }
