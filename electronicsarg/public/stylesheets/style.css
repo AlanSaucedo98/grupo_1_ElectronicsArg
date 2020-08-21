@@ -535,9 +535,11 @@ article .comprar button{
 
 /* CARRO DE COMPRAS */
 
-.principal{
-  display: flex;
+
+.carro{
+  padding: 7em;
   background-color: #232020;
+  color: whitesmoke;
 }
 
 div.fondo{
@@ -567,41 +569,38 @@ div.fondo{
 
 .delete{
   border-radius: 50px;
-  max-width: 40%;}
+    max-width: 40%;
+}
 
 
 div .imagen{
   padding: 20px;
-  }
+}
 
 .img-fluid2{
   display: flex;
   max-width: 30%;
   box-shadow: 0 0 20px 0 rgb(255 0 0 / 40%);
+  padding-block-end: 20px;
 } 
 
 .detalle{
   display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-block-end: 5px;
 } 
 
 .detalle .producto{
   width: 68%;
-  text-align: end;
 }
 
 .detalle .producto .plat-price{
   display: flex;
   justify-content: space-between;
-  padding-block-end: 35px;
+  padding-block-end: 100px;
 }
 
-.detalle .producto .fa-windows{
-  display: flex;
-  align-items: center;
-  padding-block-end: 5px;
-  padding-right: 6px;
-  padding-left: 84px;
-}
 
 div.juego{
   float: right;
@@ -610,12 +609,99 @@ div.juego{
 
 .producto h6{
   display: flex;
+  border-left: solid 2px #810303;
+  border-bottom: solid 2px #810303;
 }
 
 div .trash{
-  padding-top: 22px;
+  padding-top: 2px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
-.trash{
+button.trash{
   border-radius: 50px;
+  padding: 6px;
+}
+
+.imag{
+  box-shadow: 0 0 20px 0 rgb(255 0 0 / 40%);
+}
+
+.total{
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 1em;
+  justify-content: space-between;
+}
+
+@media(min-width: 768px){
+
+
+div.col-md-6{
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.detalle .producto .plat-price{
+  font-size: x-large;
+}
+
+.img-fluid2 {
+  max-width: 20%;
+}
+
+
+.imag{
+  width: 100%;
+}
+
+div .trash{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.h5, h5{
+  padding-right: 10px
+}
+
+
+}
+
+@media(min-width: 1024px){
+
+.producto h6{
+  font-size: 30px
+}
+
+.producto h5{
+  font-size: 30px;
+}
+
+.total h4{
+  font-size: 30px;
+}
+
+.detalle .producto .fa-windows, .detalle .producto .fa-playstation{
+  font-size: 35px;
+}
+
+}
+
+@media(min-width: 1440px){
+
+.producto h6{
+  font-size: 45px;
+}
+
+.producto h5{
+  font-size: 45px;
+}
+
+.total h4{
+  font-size: 45px;
+}
+
+
 }
