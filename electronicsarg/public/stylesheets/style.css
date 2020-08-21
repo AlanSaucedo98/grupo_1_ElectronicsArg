@@ -102,6 +102,11 @@ section a .btnvermas{
   color: white; 
   
 }
+.contenido img{
+  width: 250px;
+  height: 250px;
+  object-fit:scale-down
+}
 .titofertas{
   padding-top: 40px;
 }

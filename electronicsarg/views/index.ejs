@@ -104,92 +104,81 @@
           </a>
         </div>
       </div>
+      
+
+
+      
+
+
+    <section>
+
+      
+
+      <div class="row productosrec">
+        <div class="col-12 recom">
+          <h2>Basado en tu última visita</h2>
+        </div>
+
+        <% visitas.forEach(producto => { %>
+        
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="contenido">
+            <!--Imagen-->
+            <img src="/images/products/<%- producto.image %>  " alt="" class="img-fluid">
+            <article>
+              <!--precio-->
+              <h2><%- producto.price %> </h2>
+              <!--descuento-->
+              <% if (producto.discount != 0) { %>
+                <span><%- producto.discount %>% OFF</span>
+                <% } %>
+              <!--Titulo-->
+              <p><%- producto.name %> </p>
+              <!--Boton Ver mas-->
+              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
+            </article>
+          </div>
+          
+          </div>
+          <% }) %>
+        </div>
+    </section>
+
+  <section>
+
+      
+
+    <div class="row productosrec">
       <div class="col-12 recom">
-        <h2>Basado en tu última visita</h2>
+        <h2>Ofertas Del Mes</h2>
       </div>
-    <section class="container">
-      <div class="row productosrec">
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$990</h2>
-              <span>40% OFF</span>
-              <p>FarCry 3.</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$990</h2>
-              <span>40% OFF</span>
-              <p>FarCry 3.</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$990</h2>
-              <span>40% OFF</span>
-              <p>FarCry 3.</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$500</h2>
-              <span>40% OFF</span>
-              <p>JUEGO DE PLAY</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>  
+
+      <% ofertas.forEach(producto => { %>
+      
+        <div class="col-12 col-md-5 col-lg-3">
+          <div class="contenido">
+          <!--Imagen-->
+          <img src="/images/products/<%- producto.image %>  " alt="" class="img-fluid">
+          <article>
+            <!--precio-->
+            <h2><%- producto.price %> </h2>
+            <!--descuento-->
+            <% if (producto.discount != 0) { %>
+              <span><%- producto.discount %>% OFF</span>
+              <% } %>
+            <!--Titulo-->
+            <p><%- producto.name %> </p>
+            <!--Boton Ver mas-->
+            <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
+          </article>
+        </div>
+        
+        </div>
+        <% }) %>
       </div>
-    </section>
-    <div class="titofertas">
-    <h2>OFERTAS</h2>
-  </div>
-    <section class="container">
-      <div class="row productosrec">
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$990</h2>
-              <span>40% OFF</span>
-              <p>FarCry 3.</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$990</h2>
-              <span>40% OFF</span>
-              <p>FarCry 3.</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$990</h2>
-              <span>40% OFF</span>
-              <p>FarCry 3.</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          <div class="col-12 col-md-5 col-lg-3 contenido">
-            <img src="/images/portadajuego1.jpg" alt="" class="img-fluid">
-            <article>
-              <h2>$500</h2>
-              <span>40% OFF</span>
-              <p>JUEGO DE PLAY</p>
-              <a href="/detalles"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>  
-      </div>
-    </section>
+  </section>
+  
+    
   <footer class="container-fluid">
     <div class="row footer">
       
