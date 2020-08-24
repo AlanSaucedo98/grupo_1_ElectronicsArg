@@ -75,6 +75,10 @@
         </div> 
       
     </header>
+
+
+
+
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Home</a></li>
@@ -85,7 +89,7 @@
       <div class="container-fluid">
         <div class="row">
           <article class="col-12 videodet">
-            <iframe width="100%" height="400vh" src="https://www.youtube.com/embed/mIehtjVAuHU?start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+            <iframe width="100%" height="400vh" src= "<%- producto.trailer %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           </article>
           <article class="col-12 imagendet">
             <img src="/images/re8.jfif" class="img">
@@ -94,9 +98,9 @@
             <img src="/images/re8-3.jfif" class="img">
           </article>
           <article class="col-12 detprod">
-            <h2>Resident Evil 8</h2>
+            <h2><%= producto.name %> </h2>
             <h4>Historia</h4>
-            <p class="historia">El peligro y la soledad emanan de las decrépitas paredes de una granja abandonada en el sur de los EE. UU. «7» marca un nuevo inicio para el género del survival horror, con el cambio a la aterradora perspectiva de jugador «vista aislada». Con el RE Engine, el terror llega a nuevas cotas de fotorrealismo.</p>
+            <p class="historia"> <%- producto.description %> </p>
             <div class="req">
             <h4>Requisitos</h4>
             <ul class="bb_ul">
@@ -138,7 +142,7 @@
             </div>
             <div class="col-12 comprar">
               <a href="local"><button type="button" class="btn btn-secondary">COMPRAR</button></a>
-              <a href="./productAdd.ejs"><button type="button" class="btn btn-secondary"><i class="fas fa-cart-plus"></i></button></a>
+              <a href=""><button type="button" class="btn btn-secondary"><i class="fas fa-cart-plus"></i></button></a>
               
             </div>
             </article>
@@ -146,6 +150,11 @@
         </div>
       </div>
     
+
+
+
+
+
   <footer class="container-fluid">
     <div class="row footer">
       

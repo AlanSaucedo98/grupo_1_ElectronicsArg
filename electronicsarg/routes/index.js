@@ -9,8 +9,5 @@ router.get('/', controller.index);
 
 
 /* Funcion que renderiza los detalles del producto. */
-router.get('/detalles', function(req, res, next) {
-  res.render('productDetail', { title: 'Detalles del Producto' });
-});
 
 module.exports = router;

@@ -10,7 +10,7 @@ module.exports = { //exporto un objeto literal con todos los metodos
             return producto.category == "visited"
         })
         res.render('index', { //renderizo en el navegador la vista index que contiene el HOME del sitio
-            title: 'Mercado Liebre', //envío el objeto literal con la o las variables necesarias para renderizar de forma correcta el home
+            title: 'ElectronicsArg', //envío el objeto literal con la o las variables necesarias para renderizar de forma correcta el home
             ofertas: ofertas,
             visitas: visitas
         })
@@ -18,7 +18,7 @@ module.exports = { //exporto un objeto literal con todos los metodos
     search: function(req, res) {
         let buscar = req.query.search;
         let productos = [];
-        dbProduct.forEach(producto => {
+        dbProduct.forEach( producto => {
             if (producto.name.toLowerCase().includes(buscar)) {
                 productos.push(producto)
             }

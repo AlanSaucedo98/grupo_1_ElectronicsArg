@@ -1,9 +1,13 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'ElectronicsArg' });
-});
+const controller = require('../controllers/productController') //requiero el controlador que se hará cargo de la lógica
+const path =require("path");
+
+
+  
+  router.get('/', controller.detalle)
+
+
 
 module.exports = router;
