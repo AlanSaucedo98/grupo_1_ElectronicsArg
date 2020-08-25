@@ -8,6 +8,8 @@ router.get('/', controller.index);
 
 
 
+
+
 /* Funcion que renderiza los detalles del producto. */
 
 module.exports = router;
