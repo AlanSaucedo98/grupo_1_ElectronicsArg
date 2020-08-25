@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 
 var productCartRouter = require("./routes/productCart");
 var productAddRouter = require("./routes/productAdd");
-var productDetailRouter = require("./routes/productDetail");
+var productRouter = require("./routes/product");
 var registerRouter = require("./routes/register");
 
 
@@ -28,7 +28,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use("/detalles/:id",productDetailRouter)
+app.use("/detalles",productRouter)
 app.use('/registrarse', registerRouter)
 app.use('/cargadeproductos', productAddRouter)
 app.use('/users', usersRouter);

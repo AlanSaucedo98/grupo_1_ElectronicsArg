@@ -6,7 +6,7 @@ const path =require("path");
 
 
   
-  router.get('/', controller.detalle)
+  router.get('/:id', controller.detalle)
 
 
 

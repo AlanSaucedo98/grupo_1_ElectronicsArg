@@ -17,7 +17,10 @@ module.exports = {
         res.render("productDetail", {
             title: "Detalle del Producto",
             id: id,
-            producto: producto
+            producto: producto[0]
+            
         })
+        
     }
+   
 }

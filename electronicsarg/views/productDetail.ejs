@@ -92,10 +92,10 @@
             <iframe width="100%" height="400vh" src= "<%- producto.trailer %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           </article>
           <article class="col-12 imagendet">
-            <img src="/images/re8.jfif" class="img">
-            <img src="/images/re8-1.jfif" class="img">
-            <img src="/images/re8-2.jpg" class="img">
-            <img src="/images/re8-3.jfif" class="img">
+            <img src="/images/products/<%- producto.imagedet1 %> " class="img">
+            <img src="/images/products/<%- producto.imagedet2 %>" class="img">
+            <img src="/images/products/<%- producto.imagedet3 %>" class="img">
+            <img src="/images/products/<%- producto.imagedet4 %>" class="img">
           </article>
           <article class="col-12 detprod">
             <h2><%= producto.name %> </h2>
@@ -108,35 +108,35 @@
                 <strong>
                   SO:
                 </strong> 
-                Windows 7/8.1/10 (64-bit versions)
+                <%- producto.so %> 
                 <br>
               </li>
               <li>
                 <strong>
                   Procesador:
                 </strong> 
-                CPU: Intel Core i5-4590 or AMD FX 8350 or better
+                <%- producto.procesador %> 
                 <br>
               </li>
               <li>
                 <strong>
                   Memoria:
                 </strong>
-                 8 GB de RAM
+                 <%- producto.memoria %> 
                  <br>
                 </li>
                 <li>
                   <strong>
                     Gráficos:
                   </strong>
-                   Nvidia GeForce GTX 1070 / AMD Radeon RX 480 or better
+                  <%- producto.graficos %> 
                    <br>
                   </li>
                   <li>
                     <strong>
                       Almacenamiento:
                     </strong>
-                     17 GB de espacio disponible
+                     <%- producto.pesogb %> 
                     </li>
                   </ul>
             </div>
