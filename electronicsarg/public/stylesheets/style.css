@@ -535,9 +535,8 @@ article .comprar button{
 
 /* CARRO DE COMPRAS */
 
-
 .carro{
-  padding: 7em;
+  padding: 3em;
   background-color: #232020;
   color: whitesmoke;
 }
@@ -572,21 +571,19 @@ div.fondo{
     max-width: 40%;
 }
 
-
 div .imagen{
   padding: 20px;
 }
 
 .img-fluid2{
   display: flex;
-  max-width: 30%;
+  max-width: 35%;
   box-shadow: 0 0 20px 0 rgb(255 0 0 / 40%);
-  padding-block-end: 20px;
 } 
 
 .detalle{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: nowrap;
   padding-block-end: 5px;
 } 
@@ -600,7 +597,6 @@ div .imagen{
   justify-content: space-between;
   padding-block-end: 100px;
 }
-
 
 div.juego{
   float: right;
@@ -638,70 +634,81 @@ button.trash{
 
 @media(min-width: 768px){
 
+  .carro{
+    padding: 5em;
+  }
 
-div.col-md-6{
-  flex: 0 0 100%;
-  max-width: 100%;
-}
+  div.col-md-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 
-.detalle .producto .plat-price{
-  font-size: x-large;
-}
+  .img-fluid2 {
+    width: 140px;
+    height: 180px;
+  }
 
-.img-fluid2 {
-  max-width: 20%;
-}
+  .imag{
+    width: 100%;
+  }
 
+  div .trash{
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.imag{
-  width: 100%;
-}
-
-div .trash{
-  display: flex;
-  justify-content: flex-end;
-}
-
-.h5, h5{
-  padding-right: 10px
-}
+  .h5, h5{
+    padding-right: 10px
+  }
 
 
 }
 
 @media(min-width: 1024px){
 
-.producto h6{
-  font-size: 30px
-}
+  .carro{
+    padding-block-start: 3em;
+    padding-block-end: 3em;
+    padding-inline-end: 10em;
+    padding-inline-start: 10em;
+  }
 
-.producto h5{
-  font-size: 30px;
-}
+  .producto h6{
+    font-size: 25px;
+  }
 
-.total h4{
-  font-size: 30px;
-}
+  .producto h5{
+    font-size: 25px;
+  }
 
-.detalle .producto .fa-windows, .detalle .producto .fa-playstation{
-  font-size: 35px;
-}
+  .total h4{
+    font-size: 25px;
+  }
+
+  .detalle .producto .fa-windows, .detalle .producto .fa-playstation{
+    font-size: 30px;
+  }
+
+  div .trash {
+    padding: 8px;
+  }
+
 
 }
 
 @media(min-width: 1440px){
 
-.producto h6{
-  font-size: 45px;
-}
+  .producto h6{
+    font-size: 30px;
+  }
 
-.producto h5{
-  font-size: 45px;
-}
+  .producto h5{
+    font-size: 30px;
+  }
 
-.total h4{
-  font-size: 45px;
-}
+  .total h4{
+    font-size: 30px;
+  }
 
 
 }
