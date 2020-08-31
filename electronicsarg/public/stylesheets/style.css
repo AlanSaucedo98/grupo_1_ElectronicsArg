@@ -498,6 +498,11 @@ article .comprar button{
 
 }
 
+.req{
+  margin: 0px;
+  padding: 0px;
+}
+
 @media(min-width: 576px){
   .ColumnaB1{
   height: 520px;
@@ -517,7 +522,7 @@ article .comprar button{
     height: 100px;
   }
   .ColumnaText{
-    margin: 2px;
+    margin: 1px;
   }
   .checkbox{
     font-size: 13.5px;
@@ -530,6 +535,22 @@ article .comprar button{
   }
   #Var{
     flex-direction: column;
+  }
+  
+}
+@media(min-width: 960px){
+  
+  .ColumnaB1{
+    width: 50%;
+    float: left;
+  }
+  .ColumnaB2{
+    width: 50%;
+    float: left;
+  }
+  .itemB{
+    width: 100%;
+
   }
 }
 

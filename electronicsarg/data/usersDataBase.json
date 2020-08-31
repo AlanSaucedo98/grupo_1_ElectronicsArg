@@ -1,9 +1,1 @@
-[{
-    "name":"Alan",
-    "lastname":"Saucedo",
-    "email":"sauce@sauce.com",
-    "user":"AlanSaucedo",
-    "datebirth":"20/10/09",
-    "password":123456
-
-}]
+[{"name":"Alan","lastname":"Saucedo","email":"sauce@sauce.com","user":"AlanSaucedo","datebirth":"20/10/09","password":123456},{"name":"Franco","lastname":"Flores","email":"FrancoFlores@gmail.com","user":"Franco123","datebirth":"2020-08-28","password":"123789"},{"name":"Franco","lastname":"Flores","email":"FrancoFlores@gmail.com","user":"Franco123","datebirth":"2020-08-28","password":123789}]

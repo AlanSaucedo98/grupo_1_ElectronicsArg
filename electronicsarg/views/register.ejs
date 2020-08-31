@@ -1,77 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/style.css">
-  </head>
+  <%- include("partials/head") %> 
   <body>
-    <header>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12 recursos">
-            <div><a href="">Servicio Tecnico</a></div>
-            <div><a href="">Envio</a></div>
-            <div><a href="">Sucursales</a></div>
-            <div><a href="">Contacto</a></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class=" col-1 col-md-2 logo">
-            <a href=""><img src="/images/logosinfondo.png" alt=""></a>
-          </div>
-            <div class="col-10 col-md-7 buscador">
-              <form action="">
-                <input type="text" placeholder="Buscar productos, marcas y más ...">
-                <button type="submit"><i class="fas fa-search"></i></button>
-              </form>
-              </div>
-            <div class=" col-1  col-md-2 botonlogin">
-            <button type="button" class="btn btn-secondary">LOGIN</button>
-            </div>
-        </div>
-            
-           <div class="col-12 col-md-12 col-lg-12 nav">
-            <nav class="navbar-expand-md">
-              <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-              <ul class="menu navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <ul>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Categorias
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="#">TERROR</a>
-                          <a class="dropdown-item" href="#">RPG</a>
-                          <a class="dropdown-item" href="#">INFANTILES</a>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Ofertas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Historial</a>
-                  </li>
-                  
-                </ul>
-                <li class="logoshome">
-                  <i class="fas fa-user-cog"></i>
-                  <i class="fas fa-shopping-cart"></i>
-                  
-                </li>
-              </div>
-              
-            </nav>
-        </div> 
-      
-    </header>
+    <%- include("partials/header") %>
   <div class="principal" id="">
     <div class="item1" id="">
       <div class="item2 col-12 col-md-7">
@@ -114,64 +45,6 @@
     </div>
   </div>
   
-  
-  
-  
-  
-  
-  <footer class="container-fluid">
-    <div class="row footer">
-      
-      
-      <div class="col-12">
-        <article>
-          <i class="fas fa-phone-alt"></i>
-          <h4>Atencion al Cliente</h4>
-          <p>0800 111 2222</p>
-        </article>
-      </div>
-      <div class="col-12">
-        <article>
-          <ul class="redes">
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-facebook-square"></i>
-            
-            <i class="fab fa-apple"></i>
-            <i class="fab fa-amazon"></i>
-            <i class="fab fa-instagram"></i>
-        </ul>
-        </article>
-      </div>
-    </div>
-    <div class="col-12 copy">Copyright 2020 Electonics Arg.</div>
-  </footer>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <%- include("partials/footer") %>
 </body>
 </html>

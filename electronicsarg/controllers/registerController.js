@@ -6,11 +6,11 @@ const path =require ("path")
 
 
 module.exports = {
-    index: function(req, res){
+    index: function(req, res, next){
         res.render('register', { title: 'Registro' });
     },
 
-    crear: function(req,res){
+    crear: function(req,res, next){
         
         let user = {
             name: req.body.name,
@@ -18,9 +18,13 @@ module.exports = {
             email: req.body.email,
             user: req.body.user,
             datebirth: req.body.datebirth,
-            password: req.body.password,
+            password: Number(req.body.password),
 
         }
+
+        dbProducts.push(user),
+
+        fs.writeFileSync(path.join(__dirname,"..",'data',"usersDataBase.json"),JSON.stringify(dbProducts),'utf-8')
 
         res.send(user)
     }
