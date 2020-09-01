@@ -4,15 +4,45 @@
 
   <body>
     
-    <%- include("partials/header") %>   
+    <%- include("partials/header") %>
+    
+    
+    <section>
+
+      
+
+      <div class="row productosrec">
+        <div class="col-12 recom">
+          <h2>Todos los Productos</h2>
+        </div>
+
+        <% todos.forEach(producto => { %>
+        
+          <div class="col-12 col-md-5 col-lg-3">
+            <div class="contenido">
+            <!--Imagen-->
+            <img src="/images/products/<%- producto.image %>  " alt="" class="img-fluid">
+            <article>
+              <!--precio-->
+              <h2>$<%- producto.price %> </h2>
+              <!--descuento-->
+              <% if (producto.discount != 0) { %>
+                <span><%- producto.discount %>% OFF</span>
+                <% } %>
+              <!--Titulo-->
+              <p><%- producto.name %> </p>
+              <!--Boton Ver mas-->
+              <a href="/detalles/<%= producto.id %> " method="GET"><button class="btnvermas" type="submit">Ver Mas</button></a>
+            </article>
+          </div>
+          
+          </div>
+          <% }) %>
+        </div>
+    </section>
       
       <h2>Ofertas del Mes</h2>
         
-
-
-      
-
-
     <section>
 
       
