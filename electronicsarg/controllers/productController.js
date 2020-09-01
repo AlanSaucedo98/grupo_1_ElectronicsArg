@@ -9,7 +9,9 @@ module.exports = {
 
     index: function(req, res, next) {
         res.render('productAdd', { title: 'Carga de Producto' });
-      },
+    },
+
+    
    
     detalle: function(req, res, next) {
         
