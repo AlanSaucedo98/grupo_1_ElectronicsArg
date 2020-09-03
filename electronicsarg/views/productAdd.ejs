@@ -76,7 +76,7 @@
           <h4 class="Carga">
             <%- title %>
           </h4>
-          <form class="formuB col-12" action="" method="POST" enctype="multipart/form-data">
+          <form class="formuB col-12" action="/detalles/edit/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
             <div class="itemB2 row">
               <div class="ColumnaB1 col-6 col-sm-6 ">
                 <p>
@@ -122,11 +122,11 @@
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Desarrollador</label><br>
-                  <input id="bordes" class="ColumnaText" type="text" name="Desarrollador" value="">
+                  <input id="bordes" class="ColumnaText" type="text" name="desarrollador" value="">
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Editor</label><br>
-                  <input id="bordes" class="ColumnaText" type="text" name="Editor" value="">
+                  <input id="bordes" class="ColumnaText" type="text" name="editor" value="">
                 </p>
               </div>
               <div class="ColumnaB2 col-12 col-sm-6">

@@ -68,5 +68,22 @@ module.exports = {
 
         
     },
-   
+    actualizar:function(req,res){
+        let idProducto = req.params.id;
+        dbProducts.forEach(producto =>{
+            if(producto.id == idProducto){
+                producto.id = Number(req.body.id);
+                producto.name = req.body.name.trim();
+                producto.price = Number(req.body.price);
+                producto.discount = Number(req.body.discount);
+                producto.category = req.body.category.trim();
+                producto.description = req.body.description.trim();
+                producto.image = (req.files[0]?req.files[0].filename:producto.image);
+                producto.trailer= req.body.trailer.trim();
+                producto.labels = req.body.labels
+            }
+        })
+        fs.writeFileSync(path.join(__dirname,'..','data','productsDataBase.json'),JSON.stringify(dbProduct),'utf-8');
+        res.redirect('/create/'+ idProducto)
+    }
 }

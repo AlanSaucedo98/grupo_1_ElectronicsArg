@@ -21,6 +21,10 @@ router.get('/', controller.index);
 router.post('/',upload.any(), controller.agregar);
 
 
+router.put('/edit/:id',upload.any(),controller.actualizar);
+
+
+
 
 
 
