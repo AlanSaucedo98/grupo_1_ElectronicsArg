@@ -4,9 +4,8 @@
         "name": "Resident Evil 7",
         "price": 1000,
         "discount": 0,
-        "category": "visited",
-        "description": "Resident Evil 7 biohazard es la siguiente gran entrega de la renombrada serie Resident Evil y supone un nuevo hito para la franquicia, puesto que se aprovecha de sus raíces y abre la puerta a una experiencia de miedo realmente terrorífica. Con su gran cambio a la vista en primera persona y un estilo fotorrealista gracias al nuevo motor de Capcom RE Engine, Resident Evil 7 trae un nivel sin precedentes de inmersión que logra una experiencia de terror muy cercana y persFonal.Ambientado en la América rural moderna y continuando la historia de los dramáticos sucesos de Resident Evil® 6, los jugadores experimentarán el terror directamente desde la perspectiva en primera persona. Resident Evil 7 encarna los elementos distintivos de la serie de exploración y atmósfera tensa con los que se acuñó el género de “terror de supervivencia” hace ya veinte años. Ahora, una completa actualización del sistema de juego lleva la experiencia del terror de supervivencia al siguiente nivel.",
-        "image": "resident-evil-7.jpg",
+        "description": "",
+        "image": "image1599175845273.jpg",
         "trailer": "https://www.youtube.com/embed/mIehtjVAuHU?start=1",
         "labels": "Accion,Terror",
         "imagedet1": "re8.jfif",
@@ -18,17 +17,16 @@
         "memoria": "8 GB de RAM",
         "graficos": "Nvidia GeForce GTX 1070 / AMD Radeon RX 480 or better",
         "pesogb": "17 GB de espacio disponible",
-        "desarrollador":"Alan",
-        "editor" : "Electronics Art"
+        "idiomas": "",
+        "data": ""
     },
     {
         "id": 2,
         "name": "Counter-Strike: Global Offensive",
         "price": 2000,
         "discount": 40,
-        "category": "in-sale",
-        "description": "Counter-Strike cogió la industria de los videojuegos por sorpresa cuando, contra todo pronóstico, el MOD se convirtió en el juego de acción online para PC más jugado del mundo tras su lanzamiento en agosto de 1999, dijo Doug Lombardi de Valve. En los últimos 12 años, ha continuado siendo uno de los juegos más jugados del mundo, el protagonista de los torneos de videojuegos competitivos y se han vendido más de 25 millones de copias por todo el mundo. CS: GO promete ampliar la aclamada jugabilidad de CS y ofrecerla a los jugadores de PC, así como a los de las consolas de última generación y Mac.",
-        "image": "counter-strike.jpeg",
+        "description": "",
+        "image": "image1599175785257.png",
         "trailer": "https://www.youtube.com/embed/edYCtaNueQY",
         "labels": "Accion",
         "imagedet1": "detallescsgo1.jpg",
@@ -40,15 +38,13 @@
         "memoria": "2 GB de RAM",
         "graficos": "Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0",
         "pesogb": "15 GB de espacio disponible",
-        "desarrollador":"Alan",
-        "editor" : "Electronics Art"
+        "idiomas": "",
+        "data": ""
     },
     {
         "id": 3,
         "name": "Hitman",
         "price": 900,
-        "category": "Accion",
-        "plataform": "Windows",
         "idiomas": "ingles, ruso, español, potugues, chino",
         "data": "2020-08-20",
         "description": "Incluye todas las ubicaciones de la primera temporada y los episodios Prólogo, París, Sapienza, Marrakech, Bangkok, Colorado y Hokkaido. Encarnarás al agente 47 para acabar con objetivos importantes en este thriller de espías que transcurre en un mundo de asesinatos.\r\nConforme completes misiones y contratos, ganarás armas, objetos y equipo para usar en cualquier lugar. Aprende las técnicas del oficio para ser el asesino silencioso perfecto.",
@@ -58,26 +54,44 @@
         "memoria": "5 ram",
         "graficos": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
         "pesogb": "50 gb",
-        "desarrollador":"Alan",
-        "editor" : "Electronics Art"
+        "image": "image1599176208070.jfif"
     },
     {
         "id": 4,
         "name": "Shadowrun-collection",
         "price": 1000,
-        "category": "Accion",
-        "plataform": "Windows",
+        "category": [
+            "Accion",
+            "Aventura",
+            "Deporte",
+            "Carrera",
+            "Estrategia",
+            "RPG",
+            "Shooter",
+            "Simuladores",
+            "Otros"
+        ],
+        "plataform": [
+            "Windows",
+            "Mac",
+            "Play Station",
+            "Xbox",
+            "Nintendo",
+            "IOS",
+            "Android",
+            "Wii"
+        ],
         "idiomas": "ingles, ruso, español, potugues, chino",
         "data": "2020-08-06",
         "description": "Shadowrun Dragonfall - Director's Cut es una versión independiente de la aclamada campaña de Dragonfall de Harebrained Schemes, que se estrenó por primera vez como una gran expansión para Shadowrun Returns. The Director's Cut agrega una serie de nuevos contenidos y mejoras al juego original: 5 misiones completamente nuevas, finales alternativos, nueva música, una interfaz rediseñada, opciones de personalización del equipo, un sistema de combate renovado y más, por lo que es la versión definitiva de esta exclusiva experiencia de RPG ciberpunk",
         "trailer": "https://www.youtube.com/watch?v=4htEpyutQNc",
-        "image": "image1598855858235.webp",
+        "image": "default-image.png",
         "procesador": "Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz",
         "so": "Windows 7 de 64 bits",
         "memoria": "5 ram",
         "graficos": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
         "pesogb": "50 gb",
-        "desarrollador":"Alan",
-        "editor" : "Electronics Art"
+        "desarrollador": "Alan",
+        "editor": "Electronics Art"
     }
 ]
