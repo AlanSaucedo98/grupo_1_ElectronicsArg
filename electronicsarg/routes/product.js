@@ -7,7 +7,7 @@ const path =require("path");
 
   
   router.get('/:id', controller.detalle)
-
+  
 
 
 module.exports = router;

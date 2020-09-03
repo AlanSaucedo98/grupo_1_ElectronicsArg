@@ -68,5 +68,47 @@ module.exports = {
 
         
     },
+    editar: function(req, res, next){
+            let aProducto = req.params.id;
+            let resultado = dbProduct.filter(producto =>{
+                return producto.id == aProducto
+            })
+            res.render('productEdit',{
+                title: "Editar Producto",
+                producto: resultado[0],
+            })
+    },
+    actualizar: function(req,res, next){
+
+        let aProducto = req.params.id;
+        dbProducts.forEach(producto => {
+            if(producto.id == aProducto){
+                producto.id = Number(req.body.id);
+                producto.name= req.body.name;
+                producto.price= Number(req.body.price);
+                producto.category= req.body.category;
+                producto.plataform= req.body.Plataform;
+                producto.idiomas= req.body.idiomas;
+                producto.data= req.body.data;
+                producto.description= req.body.description;
+                producto.trailer= req.body.trailer;
+                producto.image= (req.files[0])?req.files[0].filename:"default-image.png";
+                producto.desarrollador= req.body.desarrollador;
+                producto.editor= req.body.editor;
+                producto.procesador= req.body.procesador;
+                producto.so= req.body.so;
+                producto.memoria= req.body.memoria;
+                producto.graficos= req.body.graficos;
+                producto.pesogb= req.body.pesogb;  
+            }
+        })
+
+        fs.writeFileSync(path.join(__dirname,"..",'data',"productsDataBase.json"),JSON.stringify(dbProducts),'utf-8')
+
+        res.redirect('/productAdd')
+
+        
+    }
+    
    
 }
