@@ -70,7 +70,7 @@ module.exports = {
     },
     editar: function(req, res, next){
             let aProducto = req.params.id;
-            let resultado = dbProduct.filter(producto =>{
+            let resultado = dbProducts.filter(producto =>{
                 return producto.id == aProducto
             })
             res.render('productEdit',{
@@ -105,7 +105,7 @@ module.exports = {
 
         fs.writeFileSync(path.join(__dirname,"..",'data',"productsDataBase.json"),JSON.stringify(dbProducts),'utf-8')
 
-        res.redirect('/productAdd')
+        res.redirect('/')
 
         
     }
