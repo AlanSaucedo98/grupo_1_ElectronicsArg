@@ -108,6 +108,18 @@ module.exports = {
         res.redirect('/')
 
         
+    },
+    eliminar:function(req,res){
+        let idProducto = req.params.id;
+        let aEliminar;
+        dbProducts.forEach(producto=>{
+            if(producto.id == idProducto){
+                aEliminar = dbProducts.indexOf(producto)
+            }
+        })
+        dbProducts.splice(aEliminar,1)
+        fs.writeFileSync(path.join(__dirname,'..','data','productsDataBase.json'),JSON.stringify(dbProducts));
+        res.redirect('/')
     }
     
    
