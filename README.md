@@ -1,3 +1,6 @@
+## Link De La herramienta de organizacion utilizada 
+https://trello.com/b/160SeGjd/electronicsarg
+
 ## Temática del sitio y público objetivo
 
 La página se basa en un sitio de venta de aplicaciones de entretenimiento que apunta al público gamer de todas las edades, brindando un servicio de entrega inmediata y compra internacional con una amplia variedad de métodos de pagos.
