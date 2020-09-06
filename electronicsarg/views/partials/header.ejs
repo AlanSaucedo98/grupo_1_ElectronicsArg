@@ -13,10 +13,10 @@
           <a href="/"><img src="/images/logosinfondo.png" alt=""></a>
         </div>
           <div class="col-10 col-md-7 buscador">
-            <form action="">
-              <input type="text" placeholder="Buscar productos, marcas y más ...">
-              <button type="submit"><i class="fas fa-search"></i></button>
-            </form>
+            <form action="/detalles/search" method="get" class="search-form">
+              <input type="text" name="search" placeholder="Buscar productos, marcas y más" class="search-form_input">
+              <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+          </form>
             </div>
           <div class=" col-1  col-md-2 botonlogin">
             <a href="/registrarse"><button type="button" class="btn btn-secondary">LOGIN</button></a>

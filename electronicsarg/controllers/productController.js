@@ -10,7 +10,19 @@ module.exports = {
     index: function(req, res, next) {
         res.render('productAdd', { title: 'Carga de Producto' });
     },
-
+    search:function(req,res){
+        let buscar = req.query.search;
+        let resultados=[];
+        dbProducts.forEach(producto=>{
+            if(producto.name.toLowerCase().includes(buscar.toLowerCase())){
+                resultados.push(producto)
+            }
+        })
+        res.render('prodSearch',{
+            title:"Resultado de la busqueda",
+            productos:resultados
+        })
+    },
     
    
     detalle: function(req, res, next) {
@@ -120,7 +132,8 @@ module.exports = {
         dbProducts.splice(aEliminar,1)
         fs.writeFileSync(path.join(__dirname,'..','data','productsDataBase.json'),JSON.stringify(dbProducts));
         res.redirect('/')
-    }
+    },
+    
     
    
 }

@@ -15,6 +15,9 @@ let storage = multer.diskStorage({
 })
 
 let upload = multer({storage:storage})
+
+
+  router.get('/search',controller.search);
   
   router.get('/:id', controller.detalle);
   router.delete('/delete/:id',controller.eliminar);
