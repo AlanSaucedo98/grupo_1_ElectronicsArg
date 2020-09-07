@@ -85,11 +85,22 @@
                 </p>
                 <div>
 
-                  <figure class="text-center">
-                    <img src="/images/products/<%= producto.image %> " alt="" class="img-fluid">
-                </figure>
-
-                  <input id="bordes" type="file" name="image" >
+                  
+                <label id="titulo" for="">Caratula</label>
+                <img src="/images/products/<%= producto.image %> " alt="" class="img-fluid fileimg">
+                <input id="file" type="file" value="" name="image"><br>
+                <label id="titulo" for="">Img 1</label>
+                <img src="/images/products/<%= producto.imagedet1 %> " alt="" class="img-fluid fileimg">
+                <input id="file" type="file" value="" name="imagedet1"><br>
+                <label id="titulo" for="">Img 2</label>
+                <img src="/images/products/<%= producto.imagedet2 %> " alt="" class="img-fluid fileimg">
+                <input id="file" type="file" value="" name="imagedet2"><br>
+                <label id="titulo" for="">Img 3</label>
+                <img src="/images/products/<%= producto.imagedet3 %> " alt="" class="img-fluid fileimg">
+                <input id="file" type="file" value="" name="imagedet3"><br>
+                <label id="titulo" for="">Img 4</label>
+                <img src="/images/products/<%= producto.imagedet4 %> " alt="" class="img-fluid fileimg">
+                <input id="file" type="file" value="<%=producto.imagedet4%>" name="imagedet4">
                 </div>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Fecha de Estreno</label><br>

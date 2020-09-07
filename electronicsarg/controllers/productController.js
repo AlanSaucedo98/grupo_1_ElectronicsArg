@@ -60,8 +60,12 @@ module.exports = {
             idiomas: req.body.idiomas,
             data: req.body.data,
             description: req.body.description,
-            trailer: req.body.trailer,
             image: (req.files[0])?req.files[0].filename:"default-image.png",
+            trailer: req.body.trailer,
+            imagedet1: (req.files[1])?req.files[1].filename:"default-image.png",
+            imagedet2: (req.files[2])?req.files[2].filename:"default-image.png",
+            imagedet3: (req.files[3])?req.files[3].filename:"default-image.png",
+            imagedet4: (req.files[4])?req.files[4].filename:"default-image.png",
             desarrollador:req.body.desarrollador,
             editor: req.body.editor,
             procesador: req.body.procesador,
@@ -76,13 +80,13 @@ module.exports = {
 
         fs.writeFileSync(path.join(__dirname,"..",'data',"productsDataBase.json"),JSON.stringify(dbProducts),'utf-8')
 
-        res.redirect('/productAdd')
+        res.redirect('/')
 
         
     },
     editar: function(req, res, next){
             let aProducto = req.params.id;
-            let resultado = dbProduct.filter(producto =>{
+            let resultado = dbProducts.filter(producto =>{
                 return producto.id == aProducto
             })
             res.render('productEdit',{
@@ -105,6 +109,10 @@ module.exports = {
                 producto.description= req.body.description.trim();
                 producto.trailer= req.body.trailer;
                 producto.image= (req.files[0])?req.files[0].filename:"default-image.png";
+                producto.imagedet1= (req.files[1])?req.files[1].filename:"default-image.png",
+                producto.imagedet2= (req.files[2])?req.files[2].filename:"default-image.png",
+                producto.imagedet3= (req.files[3])?req.files[2].filename:"default-image.png",
+                producto.imagedet4= (req.files[4])?req.files[3].filename:"default-image.png",
                 producto.desarrollador= req.body.desarrollador;
                 producto.editor= req.body.editor;
                 producto.procesador= req.body.procesador;
@@ -117,7 +125,7 @@ module.exports = {
 
         fs.writeFileSync(path.join(__dirname,"..",'data',"productsDataBase.json"),JSON.stringify(dbProducts),'utf-8')
 
-        res.redirect('/productAdd')
+        res.redirect('/detalles/' + aProducto)
 
         
     },
