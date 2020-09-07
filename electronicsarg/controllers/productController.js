@@ -10,7 +10,19 @@ module.exports = {
     index: function(req, res, next) {
         res.render('productAdd', { title: 'Carga de Producto' });
     },
-
+    search:function(req,res){
+        let buscar = req.query.search;
+        let resultados=[];
+        dbProducts.forEach(producto=>{
+            if(producto.name.toLowerCase().includes(buscar.toLowerCase())){
+                resultados.push(producto)
+            }
+        })
+        res.render('prodSearch',{
+            title:"Resultado de la busqueda",
+            productos:resultados
+        })
+    },
     
    
     detalle: function(req, res, next) {
@@ -90,7 +102,7 @@ module.exports = {
                 producto.plataform= req.body.Plataform;
                 producto.idiomas= req.body.idiomas;
                 producto.data= req.body.data;
-                producto.description= req.body.description;
+                producto.description= req.body.description.trim();
                 producto.trailer= req.body.trailer;
                 producto.image= (req.files[0])?req.files[0].filename:"default-image.png";
                 producto.desarrollador= req.body.desarrollador;
@@ -108,7 +120,20 @@ module.exports = {
         res.redirect('/productAdd')
 
         
-    }
+    },
+    eliminar:function(req,res){
+        let idProducto = req.params.id;
+        let aEliminar;
+        dbProducts.forEach(producto=>{
+            if(producto.id == idProducto){
+                aEliminar = dbProducts.indexOf(producto)
+            }
+        })
+        dbProducts.splice(aEliminar,1)
+        fs.writeFileSync(path.join(__dirname,'..','data','productsDataBase.json'),JSON.stringify(dbProducts));
+        res.redirect('/')
+    },
+    
     
    
 }
