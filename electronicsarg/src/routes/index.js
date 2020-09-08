@@ -1,10 +1,18 @@
+
+// ======> MODULOS <======= //
 var express = require('express');
 var router = express.Router();
 
 const controller = require('../controllers/mainController');
 
-/* Funcion que renderiza el Home. */
-router.get('/', controller.index);
+
+// ======> MIDDLEWARES <======= //
+
+const cookieCheck = require('../middlewares/cookieCheck');
+
+
+// ======> RUTAS <======= //
+router.get('/',cookieCheck, controller.index);
 
 
 

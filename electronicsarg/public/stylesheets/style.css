@@ -42,10 +42,15 @@ header .recursos a{
   
 }
 header .botonlogin{
-  
+  display: flex;
 
   margin-left: 35%;
   margin-top: 10px;
+}
+.btn-secondary {
+  border: 0px;
+  background-color: black;
+  margin-right: 5px;
 }
 
 header .nav{
@@ -174,9 +179,11 @@ footer{
   }
   
   header .botonlogin{
+   
     margin-left: 0;
     text-align: center;
     margin-top: 10px;
+    
   }
   header .nav {
    padding: 0;
