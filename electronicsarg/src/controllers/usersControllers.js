@@ -30,20 +30,20 @@ module.exports = {
         if(errors.isEmpty()){
             let nuevoUsuario = {
                 id:lastID+1,
-                nombre:req.body.nombre,
-                apellido:req.body.apellido,
+                nombre:req.body.name,
+                apellido:req.body.lastname,
                 email:req.body.email,
-                avatar:(req.files[0])?req.files[0].filename:"default.png",
-                pass:bcrypt.hashSync(req.body.pass,10),
+                avatar:(req.files)?req.files[0].filename:"default.png",
+                pass:bcrypt.hashSync(req.body.password,10),
                 rol:"user"
             }
 
             dbUsers.push(nuevoUsuario);
 
-            fs.writeFileSync(path.join(__dirname,'..','data','dbUsers.json'),JSON.stringify(dbUsers),'utf-8')
-            return res.redirect('/users/login')
+            fs.writeFileSync(path.join(__dirname,'..','data','usersDataBase.json'),JSON.stringify(dbUsers),'utf-8')
+            return res.redirect('/')
         }else{
-            res.render('userRegister',{
+            res.render('register',{
                 title:"Registro de Usuarios",
                 css:'index.css',
                 errors:errors.mapped(),

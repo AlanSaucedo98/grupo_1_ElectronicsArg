@@ -26,9 +26,8 @@ module.exports = {
 
         fs.writeFileSync(path.join(__dirname,"..",'data',"usersDataBase.json"),JSON.stringify(dbProducts),'utf-8')
 
-        res.render('userRegister',{
-            title:"Registro de Usuario",
-        
+        res.render('userProfile',{
+            title:"Home",
             user:req.session.user
 
         })

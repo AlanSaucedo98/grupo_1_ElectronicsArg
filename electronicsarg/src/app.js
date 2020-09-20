@@ -5,6 +5,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride = require('method-override');
 
+
+const session = require('express-session');
+
 var indexRouter = require('./routes/index');
 var registerRouter = require('./routes/register');
 var productAddRouter = require('./routes/productAdd');
@@ -13,8 +16,9 @@ var usersRouter = require('./routes/users');
 var productCartRouter = require("./routes/productCart");
 var productAddRouter = require("./routes/productAdd");
 var productRouter = require("./routes/product");
-var registerRouter = require("./routes/register");
+
 const editRouter = require("./routes/productEdit")
+
 
 
 var app = express();
@@ -24,6 +28,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(methodOverride('_method'));
+app.use(session({secret:'Electronics'}));
+
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
