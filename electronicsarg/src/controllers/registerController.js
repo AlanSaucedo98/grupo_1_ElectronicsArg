@@ -19,13 +19,18 @@ module.exports = {
             user: req.body.user,
             datebirth: req.body.datebirth,
             password: Number(req.body.password),
-
+            avatar :req.body.avatar
         }
 
         dbProducts.push(user),
 
         fs.writeFileSync(path.join(__dirname,"..",'data',"usersDataBase.json"),JSON.stringify(dbProducts),'utf-8')
 
-        res.send(user)
+        res.render('userRegister',{
+            title:"Registro de Usuario",
+        
+            user:req.session.user
+
+        })
     }
 }

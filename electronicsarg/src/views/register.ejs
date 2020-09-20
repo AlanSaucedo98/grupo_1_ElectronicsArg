@@ -29,6 +29,13 @@
           <p>
             <input class="control col-md-6" type="password" name="Contraseña" id="Contraseña" placeholder="Confirmar Contraseña">
           </p>
+          
+            <div class="custom-file mt-4">
+              <input type="file" class="custom-file-input " id="customFileLang" lang="es" name="avatar">
+              <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+              <small class="text-danger"><%= (typeof errorFormato != 'undefined')?errorFormato: "" %> </small>
+            </div>
+          
           <p class="terminos">
             <input type="checkbox" name="Acepto el Acuerdo" value="Acepto">Acepto los terminos de Uso, Terminos de Ventas y la politica de privacidad de ElectronicsArg.
           </p>
