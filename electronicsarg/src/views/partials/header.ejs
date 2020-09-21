@@ -19,10 +19,33 @@
           </form>
             </div>
           <div class=" col-1  col-md-2 botonlogin">
-            <a href="/registrarse"><button type="button" class="btn btn-secondary">Registrarse</button></a>
-            <a href="/"><button type="button" class="btn btn-secondary">Iniciar Sesion</button></a>
-
+            <ul class="usuario navbar-nav">
+              <% if (typeof user == "undefined") { %>
+                  <li>
+                      <a href="/users/login">Ingresá <i class="fas fa-sign-in-alt "></i></a>
+                  </li>
+                  <li>
+                      <a href="/users/register">Creá tu cuenta <i class="far fa-address-card "></i></a>
+                  </li>
+              <% } else{ %>
+                  <li>
+                      <a href="/users/logout">Cerrar sesión <i class="fas fa-sign-in-alt "></i></a>
+                  </li>
+                  <li>
+                      <a href="/users/profile ">Mis compras <i class="fas fa-shopping-basket "></i></a>
+                  </li>
+              <% } %>
+          </ul>
           </div>
+          <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-end align-items-center cuotas">
+                <a href=""><h5 class="mr-2"><%= (user)?user.nick:"Invitado" %> </h5></a>
+                <% if (user) { %>
+                    <a href=""><img src="/images/avatares/<%= user.avatar %> " alt="avatar" width="50px" height="50px" class="avatar"></a>
+
+                <% } else{%>
+                <a href=""><img src="/images/avatares/default.png" alt="" width="50px" height="50px" class="avatar"></a>
+                <% } %>
+            </div>
       </div>
           
          <div class="col-12 col-md-12 col-lg-12 nav">

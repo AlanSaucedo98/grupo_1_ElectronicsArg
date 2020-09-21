@@ -33,6 +33,7 @@ module.exports = {
                 nombre:req.body.name,
                 apellido:req.body.lastname,
                 email:req.body.email,
+                user: req.body.user,
                 avatar:(req.files)?req.files[0].filename:"default.png",
                 pass:bcrypt.hashSync(req.body.password,10),
                 rol:"user"
@@ -55,10 +56,7 @@ module.exports = {
     login:function(req,res){
         res.render('userLogin',{
             title:"Ingreso de Usuarios",
-            css:'index.css',
             user:req.session.user
-
-
         })
     },
     processLogin:function(req,res){
@@ -73,18 +71,17 @@ module.exports = {
                         email:usuario.email,
                         avatar:usuario.avatar
                     }
+
                 }
             })
             if(req.body.recordar){
-                res.cookie('userMercadoLiebre',req.session.user,{maxAge:1000*60*2})
+                res.cookie('userElectronicsArg',req.session.user,{maxAge:1000*60*2})
             }
             return res.redirect('/')
         }else{
             return res.render('userLogin',{
                 title:"Ingreso de Usuarios",
-                css:'index.css',
                 errors: errors.mapped(),
-                old:req.body,
                 user:req.session.user
 
             })
@@ -92,15 +89,15 @@ module.exports = {
     },
     logout:function(req,res){
         req.session.destroy();
-        if(req.cookies.userMercadoLiebre){
-            res.cookie('userMercadoLiebre','',{maxAge:-1})
+        if(req.cookies.userElectronicsArg){
+            res.cookie('userElectronicsArg','',{maxAge:-1})
         }
         res.redirect('/')
     },
     profile:function(req,res){
         res.render('userProfile',{
             title:"Perfil de Usuario",
-            css:'index.css',
+           
             user:req.session.user,
             user:req.session.user,
             productos: dbProducts.filter(producto=>{

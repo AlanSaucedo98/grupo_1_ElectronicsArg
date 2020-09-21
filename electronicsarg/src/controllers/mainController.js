@@ -20,7 +20,8 @@ module.exports = { //exporto un objeto literal con todos los metodos
             title: 'ElectronicsArg', //envío el objeto literal con la o las variables necesarias para renderizar de forma correcta el home
             ofertas: ofertas,
             visitas: visitas,
-            todos:todos
+            todos:todos,
+            user:req.session.user
         })
     },
     search: function(req, res) {
@@ -33,7 +34,8 @@ module.exports = { //exporto un objeto literal con todos los metodos
         })
         res.render('products', {
             title: "Resultado de la búsqueda",
-            productos: productos
+            productos: productos,
+            user:req.session.user
         })
     },
     

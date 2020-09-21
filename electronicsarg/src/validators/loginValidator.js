@@ -1,4 +1,4 @@
-const dbUsers = require('../data/userDataBase');
+const dbUsers = require('../data/usersDataBase');
 
 const {check,validationResult,body} = require('express-validator');
 const bcrypt = require('bcrypt')
@@ -20,9 +20,9 @@ module.exports = [
            return true
        }
     })
-    .withMessage('El usuario no está regisrado'),
+    .withMessage('El usuario no está registrado'),
     
-    body('pass')
+    body('password')
     .custom(function(value,{req}){
         let result = true;
         dbUsers.forEach(user => {

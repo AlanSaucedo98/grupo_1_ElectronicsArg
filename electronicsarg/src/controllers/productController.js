@@ -73,6 +73,7 @@ module.exports = {
             memoria: req.body.memoria,
             graficos: req.body.graficos,
             pesogb: req.body.pesogb, 
+            user:req.session.user
 
         }
 
@@ -92,6 +93,7 @@ module.exports = {
             res.render('productEdit',{
                 title: "Editar Producto",
                 producto: resultado[0],
+                user:req.session.user
             })
     },
     actualizar: function(req,res, next){

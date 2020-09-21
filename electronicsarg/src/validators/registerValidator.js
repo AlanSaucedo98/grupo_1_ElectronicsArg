@@ -1,4 +1,4 @@
-const dbUsers = require('../data/userDataBase');
+const dbUsers = require('../data/usersDataBase');
 
 const {check,validationResult,body} = require('express-validator');
 
