@@ -5,6 +5,9 @@ var path = require('path');
 
 const controller = require('../controllers/productController');
 
+
+const sessionUserCheck = require('../middlewares/sessionUserCheck');
+
 let storage = multer.diskStorage({
     destination:(req,file,callback)=>{
         callback(null,'public/images/products')
@@ -17,8 +20,8 @@ let storage = multer.diskStorage({
 let upload = multer({storage:storage})
 
 
-router.get('/:id', controller.editar);
-router.put('/:id',upload.any(), controller.actualizar);
+router.get('/:id',sessionUserCheck, controller.editar);
+router.put('/:id',upload.any(),sessionUserCheck, controller.actualizar);
 
 
 module.exports = router;

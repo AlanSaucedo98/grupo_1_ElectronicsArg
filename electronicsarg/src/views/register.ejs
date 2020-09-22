@@ -7,7 +7,8 @@
     <div class="item1" id="">
       <div class="item2 col-12 col-md-7">
           <h4 class="Subtitulo col-12">Registrarse en EA.</h4>
-        <form id="Formu" class="col-12" action="" method="POST">
+          
+        <form id="Formu" class="col-12" action="" method="POST" enctype="multipart/form-data">
           <p>
             <input class="control col-6" type="text" name="name" id="nombres" placeholder="Nombre">
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.name)?errors.name.msg: "" %> </small>
@@ -36,10 +37,15 @@
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.password2)?errors.password2.msg: "" %> </small>
           </p>
           
+          
+          <div class="form-group col-12 col-xl-6">
             <div class="custom-file mt-4">
               <input type="file" class="custom-file-input " id="customFileLang" lang="es" name="avatar">
               <label class="custom-file-label" for="customFileLang">Seleccionar Archivo</label>
+              <small class="text-danger"><%= (typeof errorFormato != 'undefined')?errorFormato: "" %> </small>
             </div>
+          </div>
+          
           
           <p class="terminos">
             <input type="checkbox" name="Acepto el Acuerdo" value="Acepto">Acepto los terminos de Uso, Terminos de Ventas y la politica de privacidad de ElectronicsArg.

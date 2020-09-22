@@ -33,12 +33,12 @@ module.exports = {
                 nombre:req.body.name,
                 apellido:req.body.lastname,
                 email:req.body.email,
-                user: req.body.user,
-                avatar:(req.files)?req.files[0].filename:"default.png",
+                avatar: (req.files[0])?req.files[0].filename:"default.png",
+                user :req.body.user,
                 pass:bcrypt.hashSync(req.body.password,10),
                 rol:"user"
             }
-
+            
             dbUsers.push(nuevoUsuario);
 
             fs.writeFileSync(path.join(__dirname,'..','data','usersDataBase.json'),JSON.stringify(dbUsers),'utf-8')
@@ -46,9 +46,7 @@ module.exports = {
         }else{
             res.render('register',{
                 title:"Registro de Usuarios",
-                css:'index.css',
                 errors:errors.mapped(),
-                old:req.body,
                 user:req.session.user
             })
         }
@@ -70,10 +68,13 @@ module.exports = {
                         rol:usuario.rol,
                         email:usuario.email,
                         avatar:usuario.avatar
+                        
                     }
-
+                    
                 }
+                
             })
+            
             if(req.body.recordar){
                 res.cookie('userElectronicsArg',req.session.user,{maxAge:1000*60*2})
             }

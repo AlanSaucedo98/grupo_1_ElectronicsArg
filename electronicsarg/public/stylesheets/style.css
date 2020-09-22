@@ -758,3 +758,8 @@ button.trash{
 
 
 }
+/*Register*/
+.form-group {
+  margin-bottom: 1rem;
+  display: contents;
+}

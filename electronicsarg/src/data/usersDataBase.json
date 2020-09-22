@@ -1,1 +1,58 @@
-[{"name":"Alan","lastname":"Saucedo","email":"sauce@sauce.com","user":"AlanSaucedo","datebirth":"20/10/09","password":123456},{"id":1,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.com","avatar":"default.png","pass":"$2b$10$8KH4146XFA6Nx.EGRByfv.9Q2Hx.heUWD6ON2YWILBbUzvI9Wimua","rol":"user"},{"id":2,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.commnmm","avatar":"default.png","pass":"$2b$10$05aZz/ESpxFL0g5rzjsr7.3jHTFWw3gqdL80BmT4mPA./UUeMNPnW","rol":"user"},{"id":3,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.commnmmaa","avatar":"default.png","pass":"$2b$10$T1C97wjgvz0DEBH3haDee.lr1EmwCUTnFu9Vd1ZDJD1Zzt30sqGau","rol":"user"},{"id":4,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.commmm","avatar":"default.png","pass":"$2b$10$Fskdj9XJTx0xsn5JBQEtse0KICocWcz/fOlEHY4LtBhqO0cmfcmAO","rol":"user"},{"id":5,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.coma","avatar":"default.png","pass":"$2b$10$VadWdZwPNVmuFhuFuGjQmuxeY/u5UWNELZbriSRa2gnJVaZ9n0iqy","rol":"user"},{"id":6,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.comassss","avatar":"default.png","pass":"$2b$10$TtKYB1IoMpbXdfHm1xCGAeOo4O87Nu/jM5p2wglxSLEe/mCRDOmP6","rol":"user"},{"id":7,"nombre":"Alan","apellido":"Saucedo","email":"daniel76@hotmail.com","avatar":"default.png","pass":"$2b$10$/wF502fXNR0Q/0YQ2LA2n.BLrsiYtK/H6kyexSkokS3OdRFcvQYCC","rol":"user"},{"id":8,"nombre":"Alan","apellido":"Saucedo","email":"sauce76@hotmail.com","user":"usuarioTOTAL","avatar":"default.png","pass":"$2b$10$Pjbxcyv64FFWI3JDVJclFOrAa/TA9cAfg3syJDmeB3ZHG4DGIwrNO","rol":"user"},{"id":9,"nombre":"Alan","apellido":"Saucedo","email":"saucedodaniel76@hotmail.comasassasasa","user":"alanasasa","avatar":"default.png","pass":"$2b$10$FUsIq/ZyPQngoH.j6ShhF.izzSGIR4JGQbEOhBihp5yr8CPwKGcBa","rol":"user"}]
+[
+    {
+        "name": "Alan",
+        "lastname": "Saucedo",
+        "email": "sauce@sauce.com",
+        "user": "AlanSaucedo",
+        "datebirth": "20/10/09",
+        "password": 123456
+    },
+    {
+        "id": 1,
+        "nombre": "Alan",
+        "apellido": "Saucedo",
+        "email": "saucedodaniel76@hotmail.comaaaaas",
+        "user": "123123",
+        "avatar": "default.png",
+        "pass": "$2b$10$VH0YIdrUsY/Ik0spb68h0eWXLTCBytLYUu.Bp91w3U6vyTT25064u",
+        "rol": "user"
+    },
+    {
+        "id": 2,
+        "nombre": "Alan",
+        "apellido": "Saucedo",
+        "email": "saucedodaniel76@hotmail.com",
+        "avatar": "default.png",
+        "pass": "$2b$10$BE8d3V3UEStaYDL5kfWXjOcq1fkp5GZ0zqMEpdNbvFUaqRnjnsUnq",
+        "rol": "user"
+    },
+    {
+        "id": 3,
+        "nombre": "Alan",
+        "apellido": "Saucedo",
+        "email": "saucedodaniel76@hotmail.comsssss",
+        "avatar": "default.png",
+        "user": "123123",
+        "pass": "$2b$10$8Q6rP31CrmXYX65Hd1Ud5eKZAf7CIfZxGIVTMnjW7vC4kHDrOwkVa",
+        "rol": "user"
+    },
+    {
+        "id": 4,
+        "nombre": "Alan",
+        "apellido": "Saucedo",
+        "email": "saucedodaniel76@hotmail.comaaaaaaa",
+        "user": "usuarioTOTAL",
+        "pass": "$2b$10$GGRW8l450EQIGIx.IY8hou4jcbG5QNCPYubu5riRpStHr6Srn9sFi",
+        "rol": "user"
+    },
+    {
+        "id": 5,
+        "nombre": "Alan",
+        "apellido": "Saucedo",
+        "email": "saucedodaniel76@hotmail.comasasasdf",
+        "avatar": "avatar1600733597881.png",
+        "user": "zzzzzzzzzzzzzz",
+        "pass": "$2b$10$6at0SoJC4ZKLL3CAh7Fq5Otb6AUdxNeKZ1neQXpMQn.xLpPACCvtq",
+        "rol": "user"
+    }
+]

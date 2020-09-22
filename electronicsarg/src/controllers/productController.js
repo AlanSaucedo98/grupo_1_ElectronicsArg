@@ -20,7 +20,8 @@ module.exports = {
         })
         res.render('prodSearch',{
             title:"Resultado de la busqueda",
-            productos:resultados
+            productos:resultados,
+            user:req.session.user
         })
     },
     
@@ -36,8 +37,8 @@ module.exports = {
         res.render("productDetail", {
             title: "Detalle del Producto",
             id: id,
-            producto: producto[0]
-            
+            producto: producto[0],
+            user:req.session.user
         })
         
     },
