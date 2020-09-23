@@ -1,1 +1,142 @@
-[{"id":1,"name":"Resident Evil 7","price":1000,"discount":0,"description":"Jill Valentine es una de las pocas personas que quedan en Raccoon City que han sido testigos de las atrocidades de Umbrella. Para detenerla, Umbrella decide usar su arma secreta definitiva: ¡Nemesis! También incluye Resident Evil Resistance, un nuevo modo multijugador online 1 contra 4.","image":"image1599241527769.jpg","trailer":"https://www.youtube.com/embed/mIehtjVAuHU?start=1","labels":"Accion,Terror","imagedet1":"re8.jfif","imagedet2":"re8-1.jfif","imagedet3":"re8-2.jpg","imagedet4":"re8-3.jfif","procesador":"Intel Core i5-4590 or AMD FX 8350 or better","so":"Windows 7/8.1/10 (64-bit versions)","memoria":"8 GB de RAM","graficos":"Nvidia GeForce GTX 1070 / AMD Radeon RX 480 or better","pesogb":"17 GB de espacio disponible","idiomas":"español","data":"","desarrollador":"UnDesarrolladorGenial","editor":"ElectronicsArg","category":["Accion","Aventura"],"plataform":"Windows"},{"id":2,"name":"Counter-Strike: Global Offensive","price":2000,"discount":40,"description":"Counter-Strike: Global Offensive (CS: GO) ampliará la jugabilidad de acción por equipos que fue pionera en su lanzamiento hace 12 años. CS: GO incluirá nuevos mapas, personajes y armas y ofrecerá versiones actualizadas del contenido clásico de CS (de_dust2, etc.).","image":"image1599241394914.jpeg","trailer":"https://www.youtube.com/embed/edYCtaNueQY","labels":"Accion","imagedet1":"detallescsgo1.jpg","imagedet2":"detallescsgo2.jfif","imagedet3":"detallescsgo3.jfif","imagedet4":"detallescsgo4.jpg","procesador":"Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better","so":"Windows® 7/Vista/XP","memoria":"2 GB de RAM","graficos":"Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0","pesogb":"15 GB de espacio disponible","idiomas":"español","data":"","category":"in-sale","desarrollador":"","editor":""},{"id":3,"name":"Hitman","price":900,"idiomas":"ingles, ruso, español, potugues, chino","data":"2020-08-20","description":"Incluye todas las ubicaciones de la primera temporada y los episodios Prólogo, París, Sapienza, Marrakech, Bangkok, Colorado y Hokkaido. Encarnarás al agente 47 para acabar con objetivos importantes en este thriller de espías que transcurre en un mundo de asesinatos.\r\nConforme completes misiones y contratos, ganarás armas, objetos y equipo para usar en cualquier lugar. Aprende las técnicas del oficio para ser el asesino silencioso perfecto.","trailer":"https://www.youtube.com/embed/LVqxMCZ3u6k","procesador":"Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz","so":"Windows 7 de 64 bits","memoria":"5 ram","graficos":"Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290","pesogb":"50 gb","image":"image1599521256670.jpg","imagedet1":"imagedet11599521256672.jpg","imagedet2":"imagedet21599521256676.jfif","imagedet3":"imagedet31599521256677.jfif","imagedet4":"imagedet41599521256678.jfif","desarrollador":"Franco","editor":"Flores","category":["Accion","Aventura","Estrategia","Shooter"],"plataform":["Windows","Mac","Xbox"]},{"id":4,"name":"Mortal Kombar 11","price":600,"category":"Accion","plataform":["Windows","Mac","Play Station","Xbox","Nintendo"],"idiomas":"ingles, ruso, español, potugues, chino","data":"2020-09-20","description":" es un videojuego de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive Entertainment. Se ejecuta en una versión muy modificada de Unreal Engine 3,1​ es la undécima entrega principal de la serie Mortal Kombat y una secuela de 2015 Mortal Kombat X.","image":"image1599521620598.jpg","trailer":"https://www.youtube.com/embed/2WRKK6TzPC0","imagedet1":"imagedet11599521620664.jpg","imagedet2":"imagedet21599521620749.jfif","imagedet3":"imagedet31599521620788.jpg","imagedet4":"imagedet41599521620851.png","desarrollador":"ubisoft","editor":"ubisoft","procesador":"Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz","so":"Windows 7 de 64 bits","memoria":"8 gb","graficos":"Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290","pesogb":"50 gb"},{"id":5,"name":"Far Cry 5","price":1200,"category":["Accion","Estrategia"],"plataform":["Windows","Play Station","Nintendo"],"idiomas":"ingles, ruso, español, potugues, chino","data":"2020-08-07","description":"El destino del condado de Hope está en tus manos. Derrota a la secta en solitario o con otros miembros de la resistencia en el modo cooperativo, y frustra los planes de Joseph Seed y su banda de sectarios. En la entrega de Far Cry más ambiciosa, tendrás todo a tu disposición, desde pistoleros a sueldo y animales salvajes hasta el arsenal más letal a este lado del Misisipi.","image":"image1599524048815.jpg","trailer":"https://www.youtube.com/embed/4hVME3O9wf4","imagedet1":"imagedet11599524048898.jpg","imagedet2":"imagedet21599524048915.jpg","imagedet3":"imagedet31599524048945.jpg","imagedet4":"imagedet41599524048986.jpg","desarrollador":"ubisoft","editor":"ubisoft","procesador":"Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz","so":"Windows 7 de 64 bits","memoria":"8 gb","graficos":"Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290","pesogb":"50 gb"},{"id":6,"name":"Alan","price":20000,"category":["Accion","Aventura"],"plataform":["Windows","Mac","Play Station"],"idiomas":"español","data":"1111-11-11","description":"","image":"image1600724455873.jpg","trailer":"https://www.youtube.com/watch?v=LrMmX31qCbY","imagedet1":"imagedet11600724455984.jpg","imagedet2":"imagedet21600724455994.jpg","imagedet3":"imagedet31600724456002.jpg","imagedet4":"imagedet41600724456009.jpg","desarrollador":"UnDesarrolladorGenial","editor":"ElectronicsArg","procesador":"","so":"","memoria":"","graficos":"","pesogb":""}]
+[
+    {
+        "id": 1,
+        "name": "Resident Evil 7",
+        "price": 1000,
+        "discount": 0,
+        "description": "Jill Valentine es una de las pocas personas que quedan en Raccoon City que han sido testigos de las atrocidades de Umbrella. Para detenerla, Umbrella decide usar su arma secreta definitiva: ¡Nemesis! También incluye Resident Evil Resistance, un nuevo modo multijugador online 1 contra 4.",
+        "image": "image1599241527769.jpg",
+        "trailer": "https://www.youtube.com/embed/mIehtjVAuHU?start=1",
+        "labels": "Accion,Terror",
+        "imagedet1": "re8.jfif",
+        "imagedet2": "re8-1.jfif",
+        "imagedet3": "re8-2.jpg",
+        "imagedet4": "re8-3.jfif",
+        "procesador": "Intel Core i5-4590 or AMD FX 8350 or better",
+        "so": "Windows 7/8.1/10 (64-bit versions)",
+        "memoria": "8 GB de RAM",
+        "graficos": "Nvidia GeForce GTX 1070 / AMD Radeon RX 480 or better",
+        "pesogb": "17 GB de espacio disponible",
+        "idiomas": "español",
+        "data": "",
+        "desarrollador": "UnDesarrolladorGenial",
+        "editor": "ElectronicsArg",
+        "category": [
+            
+            "in-sale"
+        ],
+        "plataform": "Windows"
+    },
+    {
+        "id": 2,
+        "name": "Counter-Strike: Global Offensive",
+        "price": 2000,
+        "discount": 40,
+        "description": "Counter-Strike: Global Offensive (CS: GO) ampliará la jugabilidad de acción por equipos que fue pionera en su lanzamiento hace 12 años. CS: GO incluirá nuevos mapas, personajes y armas y ofrecerá versiones actualizadas del contenido clásico de CS (de_dust2, etc.).",
+        "image": "image1599241394914.jpeg",
+        "trailer": "https://www.youtube.com/embed/edYCtaNueQY",
+        "labels": "Accion",
+        "imagedet1": "detallescsgo1.jpg",
+        "imagedet2": "detallescsgo2.jfif",
+        "imagedet3": "detallescsgo3.jfif",
+        "imagedet4": "detallescsgo4.jpg",
+        "procesador": "Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better",
+        "so": "Windows® 7/Vista/XP",
+        "memoria": "2 GB de RAM",
+        "graficos": "Video card must be 256 MB or more and should be a DirectX 9-compatible with support for Pixel Shader 3.0",
+        "pesogb": "15 GB de espacio disponible",
+        "idiomas": "español",
+        "data": "",
+        "category": "in-sale",
+        "desarrollador": "",
+        "editor": ""
+    },
+    {
+        "id": 3,
+        "name": "Hitman",
+        "price": 900,
+        "idiomas": "ingles, ruso, español, potugues, chino",
+        "data": "2020-08-20",
+        "description": "Incluye todas las ubicaciones de la primera temporada y los episodios Prólogo, París, Sapienza, Marrakech, Bangkok, Colorado y Hokkaido. Encarnarás al agente 47 para acabar con objetivos importantes en este thriller de espías que transcurre en un mundo de asesinatos.\r\nConforme completes misiones y contratos, ganarás armas, objetos y equipo para usar en cualquier lugar. Aprende las técnicas del oficio para ser el asesino silencioso perfecto.",
+        "trailer": "https://www.youtube.com/embed/LVqxMCZ3u6k",
+        "procesador": "Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz",
+        "so": "Windows 7 de 64 bits",
+        "memoria": "5 ram",
+        "graficos": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
+        "pesogb": "50 gb",
+        "image": "image1599521256670.jpg",
+        "imagedet1": "imagedet11599521256672.jpg",
+        "imagedet2": "imagedet21599521256676.jfif",
+        "imagedet3": "imagedet31599521256677.jfif",
+        "imagedet4": "imagedet41599521256678.jfif",
+        "desarrollador": "Franco",
+        "editor": "Flores",
+        "category": [
+            "visited"
+        ],
+        "plataform": [
+            "Windows",
+            "Mac",
+            "Xbox"
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Mortal Kombar 11",
+        "price": 600,
+        "category": "Accion",
+        "plataform": [
+            "Windows",
+            "Mac",
+            "Play Station",
+            "Xbox",
+            "Nintendo"
+        ],
+        "idiomas": "ingles, ruso, español, potugues, chino",
+        "data": "2020-09-20",
+        "description": " es un videojuego de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive Entertainment. Se ejecuta en una versión muy modificada de Unreal Engine 3,1​ es la undécima entrega principal de la serie Mortal Kombat y una secuela de 2015 Mortal Kombat X.",
+        "image": "image1599521620598.jpg",
+        "trailer": "https://www.youtube.com/embed/2WRKK6TzPC0",
+        "imagedet1": "imagedet11599521620664.jpg",
+        "imagedet2": "imagedet21599521620749.jfif",
+        "imagedet3": "imagedet31599521620788.jpg",
+        "imagedet4": "imagedet41599521620851.png",
+        "desarrollador": "ubisoft",
+        "editor": "ubisoft",
+        "procesador": "Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz",
+        "so": "Windows 7 de 64 bits",
+        "memoria": "8 gb",
+        "graficos": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
+        "pesogb": "50 gb"
+    },
+    {
+        "id": 5,
+        "name": "Far Cry 5",
+        "price": 1200,
+        "category": [
+            "Accion",
+            "Estrategia"
+        ],
+        "plataform": [
+            "Windows",
+            "Play Station",
+            "Nintendo"
+        ],
+        "idiomas": "ingles, ruso, español, potugues, chino",
+        "data": "2020-08-07",
+        "description": "El destino del condado de Hope está en tus manos. Derrota a la secta en solitario o con otros miembros de la resistencia en el modo cooperativo, y frustra los planes de Joseph Seed y su banda de sectarios. En la entrega de Far Cry más ambiciosa, tendrás todo a tu disposición, desde pistoleros a sueldo y animales salvajes hasta el arsenal más letal a este lado del Misisipi.",
+        "image": "image1599524048815.jpg",
+        "trailer": "https://www.youtube.com/embed/4hVME3O9wf4",
+        "imagedet1": "imagedet11599524048898.jpg",
+        "imagedet2": "imagedet21599524048915.jpg",
+        "imagedet3": "imagedet31599524048945.jpg",
+        "imagedet4": "imagedet41599524048986.jpg",
+        "desarrollador": "ubisoft",
+        "editor": "ubisoft",
+        "procesador": "Intel CPU Core i7-3770 a 3,4 GHz / AMD CPU AMD FX-8350 a 4 GHz",
+        "so": "Windows 7 de 64 bits",
+        "memoria": "8 gb",
+        "graficos": "Nvidia GPU GeForce GTX 770 / AMD GPU Radeon R9 290",
+        "pesogb": "50 gb"
+    }
+]

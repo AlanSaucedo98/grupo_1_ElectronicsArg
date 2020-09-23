@@ -22,7 +22,7 @@
         "nombre": "Alan",
         "apellido": "Saucedo",
         "email": "saucedodaniel76@hotmail.com",
-        "avatar": "default.png",
+        "avatar": "avatar1600818719444.jpg",
         "pass": "$2b$10$BE8d3V3UEStaYDL5kfWXjOcq1fkp5GZ0zqMEpdNbvFUaqRnjnsUnq",
         "rol": "user"
     },
@@ -53,6 +53,16 @@
         "avatar": "avatar1600733597881.png",
         "user": "zzzzzzzzzzzzzz",
         "pass": "$2b$10$6at0SoJC4ZKLL3CAh7Fq5Otb6AUdxNeKZ1neQXpMQn.xLpPACCvtq",
+        "rol": "user"
+    },
+    {
+        "id": 6,
+        "nombre": "Alan",
+        "apellido": "Saucedo",
+        "email": "saucedodaniel76@hotmail.comaaazzzz",
+        "avatar": "avatar1600818719444.jpg",
+        "user": "usuarioTOTAL",
+        "pass": "$2b$10$mXTXdBouqxKdfsDdyjN91uh0eb.rNSE8FYWBI3ToEvd9O9M8WEzjS",
         "rol": "user"
     }
 ]

@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('productCart', { title: 'Carro de Compras' });
+  res.render('productCart', { title: 'Carro de Compras',
+  user:req.session.user
+});
 });
 
 module.exports = router;

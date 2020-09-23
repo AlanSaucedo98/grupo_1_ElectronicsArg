@@ -53,7 +53,7 @@ module.exports = {
     },
     login:function(req,res){
         res.render('userLogin',{
-            title:"Ingreso de Usuarios",
+            title:"Login",
             user:req.session.user
         })
     },

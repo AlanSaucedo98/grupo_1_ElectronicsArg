@@ -26,6 +26,11 @@ header{
   display: flex;
   
 }
+header .avatar{
+  border-radius:50%;
+  object-fit: cover;
+  object-position: top;
+}
 
 .logo img{
   width: 75px;
@@ -41,11 +46,10 @@ header .recursos a{
   color: white;
   
 }
-header .botonlogin{
+header .botonlogin a{
   display: flex;
-
-  margin-left: 35%;
-  margin-top: 10px;
+  color: white;
+ 
 }
 .btn-secondary {
   border: 0px;
@@ -63,6 +67,9 @@ header .nav a{
 }
 header .nav i{
   color: white;
+}
+header .navbar-nav{
+  flex-direction: row;
 }
 
 header .nav .dropdown a{
