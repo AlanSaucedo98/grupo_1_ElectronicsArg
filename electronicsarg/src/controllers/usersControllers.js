@@ -32,6 +32,7 @@ module.exports = {
                     email:req.body.email,
                     avatar: (req.files[0])?req.files[0].filename:"default.png",
                     user :req.body.user,
+                    nacimiento:req.body.datebirth,
                     password:bcrypt.hashSync(req.body.password,10),
                     rol:req.session.user
                 }
