@@ -1,5 +1,6 @@
-const dbProducts = require('../data/database');
-const dbUsers = require('../data/userdatabase');
+
+//Requiero Base de Datos SQL
+const db = require('../database/models');
 
 const {validationResult, body} = require('express-validator');
 const bcrypt =require('bcrypt');
@@ -9,40 +10,43 @@ const path = require('path');
 
 module.exports = {
     register:function(req,res){
+        console.log(req.session.user)
         res.render('register',{
             title:"Registro de Usuario",
-            
             user:req.session.user
 
         })
     },
     processRegister:function(req,res){
         let errors = validationResult(req);
-        let lastID = 0;
-        if(dbUsers.length > 0){
-            dbUsers.forEach(user=>{
-                if(user.id > lastID){
-                    lastID = user.id
-                }
-            })
-        }
+        
+        
 
         if(errors.isEmpty()){
-            let nuevoUsuario = {
-                id:lastID+1,
-                nombre:req.body.name,
-                apellido:req.body.lastname,
-                email:req.body.email,
-                avatar: (req.files[0])?req.files[0].filename:"default.png",
-                user :req.body.user,
-                pass:bcrypt.hashSync(req.body.password,10),
-                rol:"user"
-            }
+            db.Users.create(
             
-            dbUsers.push(nuevoUsuario);
-
-            fs.writeFileSync(path.join(__dirname,'..','data','usersDataBase.json'),JSON.stringify(dbUsers),'utf-8')
-            return res.redirect('/')
+                {
+                
+                    nombre:req.body.name,
+                    apellido:req.body.lastname,
+                    email:req.body.email,
+                    avatar: (req.files[0])?req.files[0].filename:"default.png",
+                    user :req.body.user,
+                    password:bcrypt.hashSync(req.body.password,10),
+                    rol:req.session.user
+                }
+        )
+        .then(result => {
+            console.log(result)
+            if(req.session.user){
+                req.session.user = result;
+                return res.redirect('/login')
+            }
+            return res.redirect('/users/login');
+        })
+        .catch(errores => {
+            console.log(errores)
+        })
         }else{
             res.render('register',{
                 title:"Registro de Usuarios",

@@ -88,14 +88,15 @@ CREATE TABLE `usuarios` (
   `email` varchar(45) NOT NULL,
   `password` varchar(100) NOT NULL,
   `direccion` varchar(100) DEFAULT NULL,
-  `nacimiento` date NOT NULL,
+  `nacimiento` datetime NOT NULL,
   `avatar` varchar(45) DEFAULT NULL,
   `rol` varchar(45) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `update_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `user` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -104,6 +105,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
+INSERT INTO `usuarios` VALUES (1,'Alan','Saucedo','saucedodaniel76@hotmail.com','$2b$10$ecJDgxH8sZEy1FiUIOWCx.FN2dD1f4uGyu9q8R0JXNnl8x.yBvppG',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:15:47','2020-10-02 20:15:47','usuarioTOTAL'),(2,'Alan','Saucedo','saucedodaniel86@hotmail.com','$2b$10$Iq3ehO6fQAEarhXnL9OT1.hliC5uJdHH14v21sLexiQ3mxXBX4DVq',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:17:31','2020-10-02 20:17:31','asdasd'),(3,'Alan','Saucedo','saucedodaniel96@hotmail.com','$2b$10$V4EdmfFcOJSvzHscE91UhuF.ruwcurDVxw72Fmqr1VUTydLugoZb6',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:18:04','2020-10-02 20:18:04','asdas');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -134,6 +136,10 @@ LOCK TABLES `ventas` WRITE;
 /*!40000 ALTER TABLE `ventas` DISABLE KEYS */;
 /*!40000 ALTER TABLE `ventas` ENABLE KEYS */;
 UNLOCK TABLES;
+
+--
+-- Dumping routines for database 'mydb'
+--
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -144,4 +150,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-09-29 14:11:46
+-- Dump completed on 2020-10-02 17:33:08

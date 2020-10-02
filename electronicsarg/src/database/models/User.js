@@ -1,4 +1,3 @@
-const { Sequelize, DataTypes } = require("sequelize/types");
 
 module.exports = (sequelize, dataTypes) => {
 
@@ -23,16 +22,21 @@ module.exports = (sequelize, dataTypes) => {
             type:dataTypes.STRING(45),
             allowNull:false
         },
+        avatar : {
+            type:dataTypes.STRING(45)
+        },
+        user : {
+            type:dataTypes.STRING(45),
+            allowNull:false
+        },
         password : {
             type:dataTypes.STRING(100),
             allowNull:false
         },
-        fecha : {
+        nacimiento : {
             type:dataTypes.DATEONLY()
         },
-        avatar : {
-            type:dataTypes.STRING(45)
-        },
+        
         direccion : {
             type:dataTypes.STRING(100)
         },

@@ -1,4 +1,4 @@
-const dbUsers = require('../data/usersDataBase');
+const db = require('../database/models');
 
 const {check,validationResult,body} = require('express-validator');
 
@@ -22,19 +22,17 @@ module.exports = [
 
     body('email')
     .custom(function(value){
-        for(let i = 0; i<dbUsers.length;i++){
-            if(dbUsers[i].email == value){
-                return false
-            }
-        }
-        return true
-    })
-    .withMessage('Este mail ya está registrado'),
-    check("datebirth")
-    .isLength({
-        min:8,
-    })
-    .withMessage("Debe Ingresar Su Fecha de Nacimiento"),
+       return db.Users.findOne({
+           where:{
+               email:value
+           }
+       })
+       .then(user => {
+           if(user){
+               return Promise.reject('Este mail ya está registrado')
+           }
+       })
+    }),
 
     check('password')
     .isLength({
