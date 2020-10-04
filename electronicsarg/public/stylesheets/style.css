@@ -31,6 +31,9 @@ header .avatar{
   object-fit: cover;
   object-position: top;
 }
+header .cuotas a{
+  color:white
+}
 
 .logo img{
   width: 75px;
@@ -46,10 +49,14 @@ header .recursos a{
   color: white;
   
 }
+header .botonlogin{
+  display:contents;
+  
+}
 header .botonlogin a{
   display: flex;
   color: white;
- 
+ padding: 10px;
 }
 .btn-secondary {
   border: 0px;

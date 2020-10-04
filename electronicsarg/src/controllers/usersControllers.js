@@ -65,25 +65,30 @@ module.exports = {
     processLogin:function(req,res){
         let errors = validationResult(req);
         if(errors.isEmpty()){
-            dbUsers.forEach(usuario=>{
-                if(usuario.email == req.body.email){
-                    req.session.user = {
-                        id:usuario.id,
-                        nick:usuario.nombre + ' ' + usuario.apellido,
-                        rol:usuario.rol,
-                        email:usuario.email,
-                        avatar:usuario.avatar
-                        
-                    }
-                    
+
+            db.Users.findOne({
+                where:{
+                    email:req.body.email
                 }
-                
             })
-            
-            if(req.body.recordar){
-                res.cookie('userElectronicsArg',req.session.user,{maxAge:1000*60*2})
-            }
-            return res.redirect('/')
+
+            .then(user => {
+                req.session.user = {
+                    id: user.id,
+                    nick: user.user,
+                    email: user.email,
+                    avatar: user.avatar,
+                    rol: user.rol
+                }
+
+                if(req.body.recordar){
+                    res.cookie('userMercadoLiebre',req.session.user,{maxAge:1000*60*2})
+                }
+
+                res.locals.user = req.session.user;
+
+                return res.redirect('/')
+            })
         }else{
             return res.render('userLogin',{
                 title:"Ingreso de Usuarios",
