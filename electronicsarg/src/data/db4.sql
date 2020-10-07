@@ -2,7 +2,7 @@
 --
 -- Host: 127.0.0.1    Database: mydb
 -- ------------------------------------------------------
--- Server version	5.5.5-10.4.14-MariaDB
+-- Server version	5.7.24
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -48,21 +48,30 @@ DROP TABLE IF EXISTS `productos`;
 CREATE TABLE `productos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nombre` varchar(95) NOT NULL,
-  `precio` int(11) NOT NULL DEFAULT 0,
-  `idioma` varchar(45) DEFAULT NULL,
-  `desarrollador` varchar(45) NOT NULL,
+  `precio` int(11) NOT NULL DEFAULT '0',
+  `discount` varchar(45) NOT NULL,
+  `description` varchar(500) NOT NULL,
   `imagen_portada` varchar(75) NOT NULL,
+  `trailer` varchar(100) NOT NULL,
+  `labels` varchar(45) NOT NULL,
   `imagen1` varchar(75) NOT NULL,
   `imagen2` varchar(75) NOT NULL,
   `imagen3` varchar(75) NOT NULL,
   `imagen4` varchar(75) NOT NULL,
+  `procesador` varchar(95) NOT NULL,
+  `so` varchar(45) NOT NULL,
+  `memoria` varchar(45) NOT NULL,
+  `idioma` varchar(45) NOT NULL,
+  `pesogb` varchar(45) NOT NULL,
+  `desarrollador` varchar(45) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `id_categoria` int(11) DEFAULT NULL,
+  `graficos` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `id_categoria_idx` (`id_categoria`),
   CONSTRAINT `id_categoria` FOREIGN KEY (`id_categoria`) REFERENCES `categorias` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -71,6 +80,7 @@ CREATE TABLE `productos` (
 
 LOCK TABLES `productos` WRITE;
 /*!40000 ALTER TABLE `productos` DISABLE KEYS */;
+INSERT INTO `productos` VALUES (1,'Prueba',123,'1','asdgasd','image1599241527769.jpg','https://www.youtube.com/embed/mIehtjVAuHU?start=1','Accion,Terror','re8.jfif','re8-1.jfif','re8-2.jpg','re8-3.jfif','Intel Core i5-4590 or AMD FX 8350 or better','Windows 7/8.1/10 (64-bit versions)','8 GB de RAM','español','17 GB de espacio disponible','UnDesarrolladorGenial',NULL,NULL,NULL,''),(2,'Alan',20000,'50','asdlkjnasnldsaqd','image1602104227233.jpeg','https://www.youtube.com/embed/edYCtaNueQY','Otros','imagedet11602104227234.jpg','imagedet21602104227235.png','imagedet31602104227235.jpg','imagedet41602104227236.jpg','Intel® Core™ 2 Duo E6600 or AMD Phenom™ X3 8750 processor or better','Windows','12asd','Español','asda','UnDesarrolladorGenial','2020-10-07 20:57:07','2020-10-07 20:57:07',NULL,'asdas');
 /*!40000 ALTER TABLE `productos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -96,7 +106,7 @@ CREATE TABLE `usuarios` (
   `user` varchar(45) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -105,7 +115,7 @@ CREATE TABLE `usuarios` (
 
 LOCK TABLES `usuarios` WRITE;
 /*!40000 ALTER TABLE `usuarios` DISABLE KEYS */;
-INSERT INTO `usuarios` VALUES (1,'Alan','Saucedo','saucedodaniel76@hotmail.com','$2b$10$ecJDgxH8sZEy1FiUIOWCx.FN2dD1f4uGyu9q8R0JXNnl8x.yBvppG',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:15:47','2020-10-02 20:15:47','usuarioTOTAL'),(2,'Alan','Saucedo','saucedodaniel86@hotmail.com','$2b$10$Iq3ehO6fQAEarhXnL9OT1.hliC5uJdHH14v21sLexiQ3mxXBX4DVq',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:17:31','2020-10-02 20:17:31','asdasd'),(3,'Alan','Saucedo','saucedodaniel96@hotmail.com','$2b$10$V4EdmfFcOJSvzHscE91UhuF.ruwcurDVxw72Fmqr1VUTydLugoZb6',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:18:04','2020-10-02 20:18:04','asdas');
+INSERT INTO `usuarios` VALUES (2,'Alan','Saucedo','saucedodaniel86@hotmail.com','$2b$10$Iq3ehO6fQAEarhXnL9OT1.hliC5uJdHH14v21sLexiQ3mxXBX4DVq',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:17:31','2020-10-02 20:17:31','asdasd'),(3,'Alan','Saucedo','saucedodaniel96@hotmail.com','$2b$10$V4EdmfFcOJSvzHscE91UhuF.ruwcurDVxw72Fmqr1VUTydLugoZb6',NULL,'0000-00-00 00:00:00','default.png',NULL,'2020-10-02 20:18:04','2020-10-02 20:18:04','asdas'),(4,'Alan','Saucedo','dodaniel666@hotmail.com','$2b$10$pvvWbJM76E/HQGLqSwVDMe91u.omASovqUX/nfwn0t24YMAytk78i',NULL,'1111-11-11 00:00:00','default.png',NULL,'2020-10-03 02:18:21','2020-10-03 02:18:21','zzzzzzzzzzzzzz'),(5,'Alan','Saucedo','saucedodaniel76@hotmail.com','$2b$10$8Is.xk0Me9ncI/USJiNugOj8/k3WS/B28HlkLEU7c4lJYCAwgV/mq',NULL,'1231-12-12 00:00:00','default.png',NULL,'2020-10-04 02:15:38','2020-10-04 02:15:38','usuarioTOTAL');
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -123,7 +133,7 @@ CREATE TABLE `ventas` (
   PRIMARY KEY (`id`),
   KEY `id_usuario_idx` (`id_usuario`),
   KEY `id_producto_idx` (`id_producto`),
-  CONSTRAINT `id_producto` FOREIGN KEY (`id_producto`) REFERENCES `productos` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `id_producto` FOREIGN KEY (`id_producto`) REFERENCES `no puedo eliminar essta tablaaa` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -150,4 +160,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-10-02 17:33:08
+-- Dump completed on 2020-10-07 18:02:33
