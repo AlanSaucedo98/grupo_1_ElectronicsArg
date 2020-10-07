@@ -18,6 +18,10 @@ module.exports = (sequelize,dataTypes) => {
         idioma:{
             type:dataTypes.STRING(45),
         },
+        description:{
+            type:dataTypes.STRING(500),
+            allowNull:false
+        },
         desarrollador:{
             type:dataTypes.STRING(45),
             allowNull:false
@@ -44,7 +48,44 @@ module.exports = (sequelize,dataTypes) => {
         },
         id_categoria:{
             type:dataTypes.INTEGER(11)
-        }
+        },
+        desarrollador:{
+            type:dataTypes.STRING(75),
+            allowNull:false
+        },
+        discount:{
+            type:dataTypes.STRING(75),
+            allowNull:false
+        },
+        trailer:{
+            type:dataTypes.STRING(100),
+            allowNull:false
+        },
+        labels:{
+            type:dataTypes.STRING(45),
+            allowNull:false
+        },
+        procesador:{
+            type:dataTypes.STRING(45),
+            allowNull:false
+        },
+        so:{
+            type:dataTypes.STRING(45),
+            allowNull:false
+        },
+        memoria:{
+            type:dataTypes.STRING(45),
+            allowNull:false
+        },
+        graficos:{
+            type:dataTypes.STRING(45),
+            allowNull:false
+        },
+        pesogb:{
+            type:dataTypes.STRING(75),
+            allowNull:false
+        },
+
     }
 
     let config = {

@@ -50,7 +50,7 @@ module.exports = (sequelize, dataTypes) => {
         timestamps: true,
         underscored: true
     }
-
+        
 
 
     const User= sequelize.define(alias,cols,config)
