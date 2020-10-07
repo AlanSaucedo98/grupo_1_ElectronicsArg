@@ -66,7 +66,7 @@ module.exports = (sequelize,dataTypes) => {
             allowNull:false
         },
         procesador:{
-            type:dataTypes.STRING(45),
+            type:dataTypes.STRING(95),
             allowNull:false
         },
         so:{

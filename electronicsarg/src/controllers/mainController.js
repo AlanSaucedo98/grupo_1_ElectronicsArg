@@ -8,15 +8,18 @@ module.exports = { //exporto un objeto literal con todos los metodos
 
 
 
-        let ofertas = dbProduct.filter(producto => {
-            return producto.category == "in-sale"
-        })
-        let visitas = dbProduct.filter(producto => {
-            return producto.category == "visited"
-        })
+        
         db.Products.findAll()
         .then(result => {
+
+            let ofertas = dbProduct.filter(producto => {
+                return producto.category == "in-sale"
+            })
+            let visitas = dbProduct.filter(producto => {
+                return producto.category == "visited"
+            })
             
+            /*res.send(result)*/ //Descomentar esa linea para ver result y los datos que llegan.
             res.render('index', { //renderizo en el navegador la vista index que contiene el HOME del sitio
                 title: 'ElectronicsArg', //envío el objeto literal con la o las variables necesarias para renderizar de forma correcta el home
                 ofertas: ofertas,
@@ -29,7 +32,7 @@ module.exports = { //exporto un objeto literal con todos los metodos
             console.log(error)
         })
 
-        
+         
     },
     search: function(req, res) {
         let buscar = req.query.search;

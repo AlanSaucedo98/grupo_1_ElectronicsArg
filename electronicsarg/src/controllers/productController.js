@@ -1,4 +1,3 @@
-const dbProducts = require('../data/database') //requiero la base de datos de productos
 
 const db = require('../database/models');
 
@@ -46,48 +45,40 @@ module.exports = {
         
     },
     agregar: function(req,res, next){
-
-        let lastID= 1;
-
-        dbProducts.forEach(producto => {
-            if(producto.id > lastID){
-                lastID = producto.id
-            }
-        })
-        
-        let Product = {
-            id: lastID + 1,
-            name: req.body.name,
-            price: Number(req.body.price),
+ 
+        db.Products.create({
+            id:db.Products.length,
+            nombre: req.body.name,
+            discount:req.body.discount,
+            precio: Number(req.body.price),
             category: req.body.category,
             plataform: req.body.Plataform,
-            idiomas: req.body.idiomas,
+            idioma: req.body.idioma,
             data: req.body.data,
             description: req.body.description,
-            image: (req.files[0])?req.files[0].filename:"default-image.png",
+            imagen_portada: (req.files[0])?req.files[0].filename:"default-image.png",
             trailer: req.body.trailer,
-            imagedet1: (req.files[1])?req.files[1].filename:"default-image.png",
-            imagedet2: (req.files[2])?req.files[2].filename:"default-image.png",
-            imagedet3: (req.files[3])?req.files[3].filename:"default-image.png",
-            imagedet4: (req.files[4])?req.files[4].filename:"default-image.png",
+            imagen1: (req.files[1])?req.files[1].filename:"default-image.png",
+            imagen2: (req.files[2])?req.files[2].filename:"default-image.png",
+            imagen3: (req.files[3])?req.files[3].filename:"default-image.png",
+            imagen4: (req.files[4])?req.files[4].filename:"default-image.png",
+            labels:req.body.category,
             desarrollador:req.body.desarrollador,
             editor: req.body.editor,
             procesador: req.body.procesador,
-            so: req.body.so,
+            so: req.body.plataform,
             memoria: req.body.memoria,
             graficos: req.body.graficos,
             pesogb: req.body.pesogb, 
             user:req.session.user
-
-        }
-
-        dbProducts.push(Product),
-
-        fs.writeFileSync(path.join(__dirname,"..",'data',"productsDataBase.json"),JSON.stringify(dbProducts),'utf-8')
-
-        res.redirect('/')
-
-        
+        })
+        .then(result => {
+            //console.log(result) ------------> descomentar para ver el producto a pushear
+            res.redirect("/")
+        })
+        .catch(error => {
+            res.send(error)
+        })
     },
     editar: function(req, res, next){
             let aProducto = req.params.id;
