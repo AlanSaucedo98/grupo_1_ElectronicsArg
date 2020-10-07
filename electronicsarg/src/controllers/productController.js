@@ -32,22 +32,30 @@ module.exports = {
         
         let id = req.params.id;
 
-        let producto = dbProducts.filter(producto => {
-            return producto.id == id
+        
+         db.Products.findOne({
+            where:{
+                id:id
+            }
+            
+        })
+        .then(resultado =>{
+            //res.send(resultado)// Descomentar linea para ver como llega producto
+            res.render("productDetail", {
+                title: "Detalle del Producto",
+                id: id,
+                producto: resultado,
+                user:req.session.user
+            })
         })
         
-        res.render("productDetail", {
-            title: "Detalle del Producto",
-            id: id,
-            producto: producto[0],
-            user:req.session.user
-        })
+        
         
     },
     agregar: function(req,res, next){
  
         db.Products.create({
-            id:db.Products.length,
+            id:db.Products.id,
             nombre: req.body.name,
             discount:req.body.discount,
             precio: Number(req.body.price),
