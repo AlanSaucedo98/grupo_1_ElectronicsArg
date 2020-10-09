@@ -81,25 +81,25 @@
               <div class="ColumnaB1 col-12 col-sm-6 ">
                 <p>
                   <label id="titulo" for="Nombre">Nombre</label>
-                  <input id="bordes" type="text" name="name" value="<%=producto.name%>">
+                  <input id="bordes" type="text" name="name" value="<%=producto.nombre%>">
                 </p>
                 <div>
 
                   
                 <label id="titulo" for="">Caratula</label>
-                <img src="/images/products/<%= producto.image %> " alt="" class="img-fluid fileimg">
+                <img src="/images/products/<%= producto.imagen_portada %> " alt="" class="img-fluid fileimg">
                 <input id="file" type="file" value="" name="image"><br>
                 <label id="titulo" for="">Img 1</label>
-                <img src="/images/products/<%= producto.imagedet1 %> " alt="" class="img-fluid fileimg">
+                <img src="/images/products/<%= producto.imagen1 %> " alt="" class="img-fluid fileimg">
                 <input id="file" type="file" value="" name="imagedet1"><br>
                 <label id="titulo" for="">Img 2</label>
-                <img src="/images/products/<%= producto.imagedet2 %> " alt="" class="img-fluid fileimg">
+                <img src="/images/products/<%= producto.imagen2 %> " alt="" class="img-fluid fileimg">
                 <input id="file" type="file" value="" name="imagedet2"><br>
                 <label id="titulo" for="">Img 3</label>
-                <img src="/images/products/<%= producto.imagedet3 %> " alt="" class="img-fluid fileimg">
+                <img src="/images/products/<%= producto.imagen3 %> " alt="" class="img-fluid fileimg">
                 <input id="file" type="file" value="" name="imagedet3"><br>
                 <label id="titulo" for="">Img 4</label>
-                <img src="/images/products/<%= producto.imagedet4 %> " alt="" class="img-fluid fileimg">
+                <img src="/images/products/<%= producto.imagen4 %> " alt="" class="img-fluid fileimg">
                 <input id="file" type="file" value="" name="imagedet4">
                 </div>
                 <p class="ColumnaText">
@@ -108,45 +108,42 @@
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Idiomas</label><br>
-                  <input id="bordes" class="ColumnaText" type="text" name="idiomas" value="<%=producto.idiomas%>">
+                  <input id="bordes" class="ColumnaText" type="text" name="idioma" value="<%=producto.idioma%>">
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Desarrollador</label><br>
                   <input id="bordes" class="ColumnaText" type="text" name="desarrollador" value="<%=producto.desarrollador%>">
                 </p>
-                <p class="ColumnaText">
-                  <label id="titulo" for="">Editor</label><br>
-                  <input id="bordes" class="ColumnaText" type="text" name="editor" value="<%=producto.editor%>">
-                </p>
+                
               </div>
               <div class="ColumnaB2 col-12 col-sm-6">
                 <p>
                   <label id="titulo" for="Precio">Precio</label>
-                  <input id="bordes" type="text" name="price" value="<%=producto.price%>">
+                  <input id="bordes" type="text" name="price" value="<%=producto.precio%>">
                 </p>
                 <div class="check col-12">
                   <p class="checkbox col-6">
                     <label id="bordes" for="">Plataforma</label><br>
-                    <input type="checkbox" name="Plataform" value="Windows">Windows <br>
-                    <input type="checkbox" name="Plataform" value="Mac">Mac <br>
-                    <input type="checkbox" name="Plataform" value="Play Station">Play Station <br>
-                    <input type="checkbox" name="Plataform" value="Xbox">Xbox <br>
-                    <input type="checkbox" name="Plataform" value="Nintendo">Nintendo <br>
-                    <input type="checkbox" name="Plataform" value="IOS">IOS <br>
-                    <input type="checkbox" name="Plataform" value="Android">Android <br>
-                    <input type="checkbox" name="Plataform" value="Wii">Wii
+                    <input type="radio" name="plataform" checked="checked" value="Windows">Windows <br>
+                    <input type="radio" name="plataform" value="Mac">Mac <br>
+                    <input type="radio" name="plataform" value="Play Station">Play Station <br>
+                    <input type="radio" name="plataform" value="Xbox">Xbox <br>
+                    <input type="radio" name="plataform" value="Nintendo">Nintendo <br>
+                    <input type="radio" name="plataform" value="IOS">IOS <br>
+                    <input type="radio" name="plataform" value="Android">Android <br>
+                    <input type="radio" name="plataform" value="Wii">Wii
                   </p>
                   <p class="checkbox col-6">
                     <label id="bordes" for="">Categorias</label><br>
-                    <input type="checkbox" name="category" value="Accion">Accion <br>
-                    <input type="checkbox" name="category" value="Aventura">Aventura <br>
-                    <input type="checkbox" name="category" value="Deporte">Deporte <br>
-                    <input type="checkbox" name="category" value="Carrera">Carrera <br>
-                    <input type="checkbox" name="category" value="Estrategia">Estrategia <br>
-                    <input type="checkbox" name="category" value="RPG">RPG <br>
-                    <input type="checkbox" name="category" value="Shooter">Shooter <br>
-                    <input type="checkbox" name="category" value="Simuladores">Simuladores <br>
-                    <input type="checkbox" name="category" value="Otros">Otros <br>
+                    <input type="radio" name="category" value="Accion">Accion <br>
+                    <input type="radio" name="category" value="Aventura">Aventura <br>
+                    <input type="radio" name="category" value="Deporte">Deporte <br>
+                    <input type="radio" name="category" value="Carrera">Carrera <br>
+                    <input type="radio" name="category" value="Estrategia">Estrategia <br>
+                    <input type="radio" name="category" value="RPG">RPG <br>
+                    <input type="radio" name="category" value="Shooter">Shooter <br>
+                    <input type="radio" name="category" value="Simuladores">Simuladores <br>
+                    <input type="radio" name="category" checked="checked" value="Otros">Otros <br>
                     
                   </p>
                 </div>
@@ -158,8 +155,8 @@
                       <input id="bordes" type="text" name="procesador" value="<%=producto.procesador%>">
                     </p>
                     <p class="req">
-                      <label id="titulo">So:</label>
-                      <input id="bordes" type="text" name="so" value="<%=producto.so%>">
+                      <label id="titulo">Descuento:</label>
+                      <input id="bordes" type="text" name="discount">
                     </p>
                     <p class="req">
                       <label id="titulo">Memoria:</label>
