@@ -4,6 +4,7 @@ var multer = require('multer');
 var path = require('path');
 
 const controller = require('../controllers/productController');
+const sessionUserCheck = require('../middlewares/sessionUserCheck');
 
 let storage = multer.diskStorage({
     destination:(req,file,callback)=>{
@@ -17,8 +18,8 @@ let storage = multer.diskStorage({
 let upload = multer({storage:storage})
 
 
-router.get('/', controller.index);
-router.post('/',upload.any(), controller.agregar);
+router.get('/',sessionUserCheck, controller.index);
+router.post('/',upload.any(),sessionUserCheck, controller.agregar);
 
 
 router.put('/edit/:id',upload.any(),controller.actualizar);

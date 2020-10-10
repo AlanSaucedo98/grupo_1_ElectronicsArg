@@ -7,22 +7,33 @@
     <form id="Formu" class="col-12" action="" method="POST">
       
       
-      <p>
+      <div>
         <input class="control col-12" type="email" name="email" id="correo" placeholder="E-mail">
         <small class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %> </small>
-      </p>
+      </div>
+        
       
       
-      <p>
-        <input class="control col-md-6" type="password" name="password" id="Contraseña" placeholder="Contraseña">
-        <small class="text-danger"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %> </small>
-      </p>
+     <div>
+      <input class="control col-md-6" type="password" name="password" id="Contraseña" placeholder="Contraseña">
+      <small class="text-danger"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %> </small>
+    
+     </div>
+        
       
+      <div class="btn_rec">
+        
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" name="recordar">
+        <label class="form-check-label" for="exampleCheck1">Recordarme</label>
       
+      </div>
+      <div>
       <p class="login">
         <input class="controlBoton col-6" type="submit" value="Iniciar Sesion">
         <label><a class="redi col-12" href="/registrarse">¿No tiene una Cuenta?</a></label>
       </p>
+      </div>
+      
     
     </form>
 

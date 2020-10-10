@@ -20,8 +20,8 @@ let storage = multer.diskStorage({
 let upload = multer({storage:storage})
 
 
-router.get('/:id',/*sessionUserCheck ,*/ controller.editar);
-router.put('/:id',upload.any(),/*sessionUserCheck,*/ controller.actualizar);
+router.get('/:id',sessionUserCheck , controller.editar);
+router.put('/:id',upload.any(),sessionUserCheck, controller.actualizar);
 
 
 module.exports = router;

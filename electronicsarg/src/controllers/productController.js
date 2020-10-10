@@ -10,7 +10,7 @@ module.exports = {
 
     index: function(req, res, next) {
         console.log(db.Products)
-        res.render('productAdd', { title: 'Carga de Producto'  });
+        res.render('productAdd', { title: 'Carga de Producto' ,user:req.session.user });
     },
     search:function(req,res){
         let buscar = req.query.search;

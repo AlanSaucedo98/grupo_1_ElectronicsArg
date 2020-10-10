@@ -18,17 +18,9 @@
               <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
           </form>
             </div>
-            <div class="col-12 col-md-4 col-lg-4 d-flex justify-content-end align-items-center cuotas">
-              <a href=""><h5 class="mr-2"><%= (user)?user.nick:"Invitado" %> </h5></a>
-              <% if (user) { %>
-                  <a href=""><img src="/images/avatares/<%= user.avatar %> " alt="avatar" width="50px" height="50px" class="avatar"></a>
-
-              <% } else{%>
-              <a href=""><img src="/images/avatares/default.png" alt="" width="50px" height="50px" class="avatar"></a>
-              <% } %>
-        </div>
+            
           
-        <div class=" col-1  col-md-2 botonlogin">
+        <div class=" col-12  col-md-2 botonlogin">
             
           <% if (typeof user == "undefined") { %>
               <li>
@@ -79,12 +71,22 @@
                 
               </ul>
               <li class="logoshome">
-                <i class="fas fa-user-cog"></i>
                 <a href="/carrodecompras"><i class="fas fa-shopping-cart"></i></a>
+                <a href="/create"><i class="fas fa-cloud-upload-alt"></i> </a>
                 
               </li>
+              
             </div>
-            
+            <div class="col-12 col-md-12 col-lg-12  cuotas">
+              <a href=""><h5 class="mr-2"><%= (user)?user.nick:"Invitado" %> </h5></a>
+              <% if (user) { %>
+                
+                  <a href=""><img src="/images/avatares/<%= user.avatar %> " alt="avatar" width="50px" height="50px" class="avatar"></a>
+
+              <% } else{%>
+              <a href=""><img src="/images/avatares/default.png" alt="" width="50px" height="50px" class="avatar"></a>
+              <% } %>
+        </div>
           </nav>
       </div> 
     

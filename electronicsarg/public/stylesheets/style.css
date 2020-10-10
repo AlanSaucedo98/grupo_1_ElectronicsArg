@@ -5,8 +5,8 @@
 /*GENERAL*/
 body{
   background-color: black;
-  font-weight: 300;
   color: whitesmoke;
+  text-align: center;
 }
 a{
   text-decoration: none;
@@ -30,6 +30,8 @@ header .avatar{
   border-radius:50%;
   object-fit: cover;
   object-position: top;
+  align-items: center;
+   justify-content: center;
 }
 header .cuotas a{
   color:white
@@ -49,12 +51,9 @@ header .recursos a{
   color: white;
   
 }
-header .botonlogin{
-  display:contents;
-  
-}
+
 header .botonlogin a{
-  display: flex;
+  display: block;
   color: white;
  padding: 10px;
 }
@@ -93,6 +92,9 @@ header .buscador{
 }
 header .buscador form{
   padding-left: 50px;
+}
+@media(min-width:768px){
+
 }
 /*PRODUCTOS y CARRUSEL*/
 .carrusel{
@@ -260,6 +262,14 @@ footer{
   background-color: black;
   padding: 0px;
 }
+.btn_rec {
+  padding-right: 100px;
+  color: aqua;
+}
+.col-md-6{
+  flex: 100%;
+  max-width: 100%;
+}
 #itemimg {
   padding: 0px;
   width: 100%;
@@ -317,6 +327,8 @@ footer{
   }
 
 }
+
+
 /*DETALLES DEL PRODUCTO*/
 .breadcrumb{
   background-color: black;

@@ -80,8 +80,7 @@ module.exports = {
                     avatar: user.avatar,
                     rol: user.rol
                 }
-
-                if(req.body.recordar){
+                if(req.body.recordar ){
                     res.cookie('userMercadoLiebre',req.session.user,{maxAge:1000*60*2})
                 }
 

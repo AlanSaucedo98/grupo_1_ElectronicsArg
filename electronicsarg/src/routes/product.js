@@ -16,11 +16,12 @@ let storage = multer.diskStorage({
 
 let upload = multer({storage:storage})
 
+const sessionUserCheck = require('../middlewares/sessionUserCheck');
 
   router.get('/search',controller.search);
   
-  router.get('/:id', controller.detalle);
-  router.delete('/delete/:id',controller.eliminar);
+  router.get('/:id',sessionUserCheck, controller.detalle);
+  router.delete('/delete/:id',sessionUserCheck,controller.eliminar);
   
 
 
