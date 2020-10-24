@@ -19,7 +19,8 @@ var productRouter = require("./routes/product");
 
 const editRouter = require("./routes/productEdit")
 
-
+//Rutas para EndPoint - Apis
+var userApiRouter = require('./routes/api/userApis')
 
 var app = express();
 
@@ -37,6 +38,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(methodOverride('_method'));
 
+app.use('/api',userApiRouter)
 app.use('/', indexRouter);
 app.use("/detalles",productRouter)
 app.use('/registrarse', registerRouter)
@@ -44,6 +46,7 @@ app.use('/create', productAddRouter)
 app.use('/users', usersRouter);
 app.use("/carrodecompras", productCartRouter)
 app.use("/editar",editRouter)
+
 
 
 // catch 404 and forward to error handler
