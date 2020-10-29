@@ -789,3 +789,7 @@ button.trash{
   margin-bottom: 1rem;
   display: contents;
 }
+.errores ul {
+  color: red;
+  border: 1px solid ;
+}

@@ -53,7 +53,7 @@ module.exports = {
         
     },
     agregar: function(req,res, next){
- 
+ //Hacer un Find by pk Y traer la informacion de las img y guardarlas.
         db.Products.create({
             id:db.Products.id,
             nombre: req.body.name,
@@ -66,10 +66,10 @@ module.exports = {
             description: req.body.description,
             imagen_portada: (req.files[0])?req.files[0].filename:"default-image.png",
             trailer: req.body.trailer,
-            imagen1: (req.files[1])?req.files[1].filename:"default-image.png",
-            imagen2: (req.files[2])?req.files[2].filename:"default-image.png",
-            imagen3: (req.files[3])?req.files[3].filename:"default-image.png",
-            imagen4: (req.files[4])?req.files[4].filename:"default-image.png",
+            imagen1: (req.files[0])?req.files[0].filename:"default-image.png",
+            imagen2: (req.files[1])?req.files[1].filename:"default-image.png",
+            imagen3: (req.files[2])?req.files[2].filename:"default-image.png",
+            imagen4: (req.files[3])?req.files[3].filename:"default-image.png",
             labels:req.body.category,
             desarrollador:req.body.desarrollador,
             editor: req.body.editor,

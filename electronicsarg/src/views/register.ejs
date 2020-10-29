@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <%- include("partials/head") %> 
+  
   <body>
     <%- include("partials/header") %>
   <div class="principal" id="">
@@ -9,6 +10,9 @@
           <h4 class="Subtitulo col-12">Registrarse en EA.</h4>
           
         <form id="Formu" class="col-12" action="" method="POST" enctype="multipart/form-data">
+          <div class="errores">
+            <ul></ul>
+          </div>
           <p>
             <input class="control col-6" type="text" name="name" id="nombres" placeholder="Nombre">
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.name)?errors.name.msg: "" %> </small>
@@ -29,11 +33,11 @@
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.datebirth)?errors.datebirth.msg: "" %> </small>
           </p>
           <p>
-            <input class="control col-md-6" type="password" name="password" id="Contraseña" placeholder="Contraseña">
+            <input class="control col-md-6" type="password" name="password" id="Contraseña1" placeholder="Contraseña">
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.password)?errors.password.msg: "" %> </small>
           </p>
           <p>
-            <input class="control col-md-6" type="password" name="password2" id="Contraseña" placeholder="Confirmar Contraseña">
+            <input class="control col-md-6" type="password" name="password2" id="Contraseña2" placeholder="Confirmar Contraseña">
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.password2)?errors.password2.msg: "" %> </small>
           </p>
           
@@ -48,7 +52,7 @@
           
           
           <p class="terminos">
-            <input type="checkbox" name="Acepto el Acuerdo" value="Acepto">Acepto los terminos de Uso, Terminos de Ventas y la politica de privacidad de ElectronicsArg.
+            <input type="checkbox" id="check" name="Acepto el Acuerdo" value="Acepto">Acepto los terminos de Uso, Terminos de Ventas y la politica de privacidad de ElectronicsArg.
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.bases)?errors.bases.msg: "" %> </small>
 
           </p>
@@ -66,5 +70,8 @@
   </div>
   
   <%- include("partials/footer") %>
+
+  <script src="/js/script-register.js"></script>
 </body>
+
 </html>

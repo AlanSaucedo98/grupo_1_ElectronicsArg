@@ -1,4 +1,4 @@
-let dbProduct = require('../data/database') //Recordar eliminar
+
 
 const db = require('../database/models'); //requiero La base de datos mysql
 
@@ -12,18 +12,12 @@ module.exports = { //exporto un objeto literal con todos los metodos
         db.Products.findAll()
         .then(result => {
 
-            let ofertas = dbProduct.filter(producto => {
-                return producto.category == "in-sale"
-            })
-            let visitas = dbProduct.filter(producto => {
-                return producto.category == "visited"
-            })
+            
             
             /*res.send(result)*/ //Descomentar esa linea para ver result y los datos que llegan.
             res.render('index', { //renderizo en el navegador la vista index que contiene el HOME del sitio
                 title: 'ElectronicsArg', //envío el objeto literal con la o las variables necesarias para renderizar de forma correcta el home
-                ofertas: ofertas,
-                visitas: visitas,
+                
                 todos:result,
                 user:req.session.user
             })
@@ -34,7 +28,7 @@ module.exports = { //exporto un objeto literal con todos los metodos
 
          
     },
-    search: function(req, res) {
+    /*search: function(req, res) {
         let buscar = req.query.search;
         let productos = [];
         dbProduct.forEach( producto => {
@@ -47,6 +41,6 @@ module.exports = { //exporto un objeto literal con todos los metodos
             productos: productos,
             user:req.session.user
         })
-    },
+    },*/
     
 }

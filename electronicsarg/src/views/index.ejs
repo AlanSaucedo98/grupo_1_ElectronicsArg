@@ -43,73 +43,11 @@
       
       <h2>Ofertas del Mes</h2>
         
-    <section>
+   
+
 
       
 
-      <div class="row productosrec">
-        <div class="col-12 recom">
-          <h2>Basado en tu última visita</h2>
-        </div>
-
-        <% visitas.forEach(producto => { %>
-        
-          <div class="col-12 col-md-5 col-lg-3">
-            <div class="contenido">
-            <!--Imagen-->
-            <img src="/images/products/<%- producto.image %>  " alt="" class="img-fluid">
-            <article>
-              <!--precio-->
-              <h2>$<%- producto.price %> </h2>
-              <!--descuento-->
-              <% if (producto.discount != 0) { %>
-                <span><%- producto.discount %>% OFF</span>
-                <% } %>
-              <!--Titulo-->
-              <p><%- producto.name %> </p>
-              <!--Boton Ver mas-->
-              <a href="/detalles/<%= producto.id %> " method="GET"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          
-          </div>
-          <% }) %>
-        </div>
-    </section>
-
-  <section>
-
-      
-
-    <div class="row productosrec">
-      <div class="col-12 recom">
-        <h2>Ofertas Del Mes</h2>
-      </div>
-
-      <% ofertas.forEach(producto => { %>
-      
-        <div class="col-12 col-md-5 col-lg-3">
-          <div class="contenido">
-          <!--Imagen-->
-          <img src="/images/products/<%- producto.image %>  " alt="" class="img-fluid">
-          <article>
-            <!--precio-->
-            <h2>$<%- producto.price %> </h2>
-            <!--descuento-->
-            <% if (producto.discount != 0) { %>
-              <span><%- producto.discount %>% OFF</span>
-              <% } %>
-            <!--Titulo-->
-            <p><%- producto.name %> </p>
-            <!--Boton Ver mas-->
-            <a href="/detalles/<%- producto.id %>"><button class="btnvermas" type="submit">Ver Mas</button></a>
-          </article>
-        </div>
-        
-        </div>
-        <% }) %>
-      </div>
-  </section>
   
   <%- include("partials/footer") %> 
 
