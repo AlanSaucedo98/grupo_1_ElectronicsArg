@@ -39,11 +39,14 @@ window.addEventListener("load", function () {
 
         let pass1 = document.getElementById("Contraseña1")
         let pass2 = document.getElementById("Contraseña2")
+        
+        if(pass1.value > 12 || pass1.value < 6){
+            errores.push("La contraseñas debe tener entre 6 y 12 caracteres  ")
+        }
+        
         if (pass1.value != pass2.value) {
             errores.push("Las contraseñas no coinciden ")
-        } else if ((pass1.value < 6 && pass1.value > 8) || (pass2.value < 6 && pass2.value > 8)) {
-            errores.push("La contraseña debe tener entre 6 y 8 caracteres ")
-        }
+        } 
 
 
 
