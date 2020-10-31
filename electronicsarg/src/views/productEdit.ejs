@@ -77,6 +77,9 @@
             <%- title %>
           </h4>
           <form class="formuB col-12" action="/editar/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div class="errores">
+              <ul></ul>
+            </div>
             <div class="itemB2 row">
               <div class="ColumnaB1 col-12 col-sm-6 ">
                 <p>
@@ -196,5 +199,6 @@
     </div>
     
     <%- include("partials/footer") %>
+    <script src="/js/script-productEdit.js"></script>
   </body>
   </html>
