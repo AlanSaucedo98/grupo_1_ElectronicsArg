@@ -1,23 +1,24 @@
 window.addEventListener("load", function () {
 
-    let formulario = document.getElementsByClassName("FormuB")
-    formulario.addEventListener("submit", function (e) {
+
+    let formularioB = document.getElementById("FormularioB");
+    formularioB.addEventListener("submit", function (e) {
 
 
 
         let errores = []
 
-        let nombre = document.getElementsByClassName("nombreP");
+        let nombre = document.getElementById("nombreP");
         if (nombre.value == "") {
             errores.push("Nombre Obligatorio")
 
         }
-        let precio = document.getElementsByClassName("precioP");
+        let precio = document.getElementById("precioP");
         if (precio.value == "") {
-            errores.push("Especificado Precio")
+            errores.push("Especificar Precio")
         }
 
-        let plataforma = document.getElementById("Plataforma");
+        /*let plataforma = document.getElementById("Plataforma");
         if (plataforma.value == "") {
             errores.push("Eliga al menos 1 plataforma")
         }
@@ -25,55 +26,51 @@ window.addEventListener("load", function () {
         let categoria = document.getElementById("categoria");
         if (categoria.value == "") {
             errores.push("Eliga al menos 1 categoria")
-        }
+        }*/
 
-        let idiomas = document.getElementsByClassName("idiomas");
+        let idiomas = document.getElementById("idiomas");
         if (idiomas.value == "") {
             errores.push("Espesificar idomas")
         }
 
-        let desarollador = document.getElementsByClassName("desarrollador");
+        let desarollador = document.getElementById("desarrollador");
         if (desarollador.value == "") {
             errores.push("Falta nombre de Desarrollador")
         }
 
-        let procesador = document.getElementsByClassName("pro");
+        let procesador = document.getElementById("pro");
         if (procesador.value == "") {
             errores.push("Espesificar Procesador")
         }
 
-        /*let descuento = document.getElementById("descuento");
-        if (descuento.value == "") {
-            errores.push("El campo no puede estar vacio")
-        }*/
 
-        let memoria = document.getElementsByClassName("memoria");
+        let memoria = document.getElementById("memoria");
         if (memoria.value == "") {
             errores.push("Espesificar memoria RAM")
         }
 
 
-        let disco = document.getElementsByClassName("disco");
+        let disco = document.getElementById("disco");
         if (disco.value == "") {
             errores.push("Espesificar espacio de disco duro")
         }
 
-        let graficos = document.getElementsByClassName("graficos");
+        let graficos = document.getElementById("graficos");
         if (graficos.value == "") {
             errores.push("Espesificar Graficos")
         }
 
-        let trailer = document.getElementsByClassName("trailer");
+        let trailer = document.getElementById("trailer");
         if (trailer.value == "") {
             errores.push("Trailer obligatorio")
         }
 
-        let resumen = document.getElementsByClassName("resumen");
+        let resumen = document.getElementById("resumen");
         if (resumen.value == "") {
             errores.push("Falta un Resumen")
         }
 
-        let fecha = document.getElementsByClassName("datebirth");
+        let fecha = document.getElementById("datebirth");
 
         if (fecha.value == "") {
             errores.push("El campo fecha no puede estar vacio")

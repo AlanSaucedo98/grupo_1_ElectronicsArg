@@ -507,12 +507,12 @@ article .comprar button{
 }
 
 .formuB{
-  height: 95%;
+  height: 100%;
   width: 100%;
   float: left;
   margin: 0px;
   padding: 0px;
-  background-color: hotpink;
+  background-color: rgb(0, 0, 0);
   
 }
 
@@ -552,6 +552,20 @@ article .comprar button{
 .req{
   margin: 0px;
   padding: 0px;
+}
+
+#erro{
+  background-color: #232020;
+  margin: 0px;
+  outline: none;
+  border-color: #A19D9D;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+.errorlist{ 
+  font-weight: bold;
+  color: aliceblue;
 }
 
 @media(min-width: 576px){

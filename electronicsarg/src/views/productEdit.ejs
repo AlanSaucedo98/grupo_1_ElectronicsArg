@@ -76,15 +76,15 @@
           <h4 class="Carga">
             <%- title %>
           </h4>
-          <form class="formuB col-12" action="/editar/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-            <div class="errores">
-              <ul></ul>
+          <form id="FormularioB" class="formuB col-12" action="/editar/<%= producto.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+            <div id="erro" class="errores">
+              <ul class="errorlist"></ul>
             </div>
             <div class="itemB2 row">
               <div class="ColumnaB1 col-12 col-sm-6 ">
                 <p>
                   <label id="titulo" for="Nombre">Nombre</label>
-                  <input id="bordes" type="text" name="name" value="<%=producto.nombre%>">
+                  <input id="nombreP" type="text" name="name" value="<%=producto.nombre%>">
                 </p>
                 <div>
 
@@ -107,22 +107,22 @@
                 </div>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Fecha de Estreno</label><br>
-                  <input id="bordes" class="ColumnaText" type="date" name="data" value="<%=producto.data%>">
+                  <input id="datebirth" class="ColumnaText" type="date" name="data" value="<%=producto.data%>">
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Idiomas</label><br>
-                  <input id="bordes" class="ColumnaText" type="text" name="idioma" value="<%=producto.idioma%>">
+                  <input id="idiomas" class="ColumnaText" type="text" name="idioma" value="<%=producto.idioma%>">
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Desarrollador</label><br>
-                  <input id="bordes" class="ColumnaText" type="text" name="desarrollador" value="<%=producto.desarrollador%>">
+                  <input id="desarrollador" class="ColumnaText" type="text" name="desarrollador" value="<%=producto.desarrollador%>">
                 </p>
                 
               </div>
               <div class="ColumnaB2 col-12 col-sm-6">
                 <p>
                   <label id="titulo" for="Precio">Precio</label>
-                  <input id="bordes" type="text" name="price" value="<%=producto.precio%>">
+                  <input id="precioP" type="text" name="price" value="<%=producto.precio%>">
                 </p>
                 <div class="check col-12">
                   <p class="checkbox col-6">
@@ -155,23 +155,23 @@
                   <p>
                     <p class="req">
                       <label id="titulo">Procesador:</label>
-                      <input id="bordes" type="text" name="procesador" value="<%=producto.procesador%>">
+                      <input id="pro" type="text" name="procesador" value="<%=producto.procesador%>">
                     </p>
                     <p class="req">
                       <label id="titulo">Descuento:</label>
-                      <input id="bordes" type="text" name="discount">
+                      <input id="descuento" type="text" name="discount">
                     </p>
                     <p class="req">
                       <label id="titulo">Memoria:</label>
-                    <input id="bordes" type="text" name="memoria" value="<%=producto.memoria%>">
+                    <input id="memoria" type="text" name="memoria" value="<%=producto.memoria%>">
                   </p>
                     <p class="req">
                       <label id="titulo">Tarjeta Grafica:</label>
-                    <input id="bordes" type="text" name="graficos" value="<%=producto.graficos%>">
+                    <input id="graficos" type="text" name="graficos" value="<%=producto.graficos%>">
                   </p>
                     <p class="req">
                       <label id="titulo">Disco Duro:</label>
-                    <input id="bordes" type="text" name="pesogb" value="<%=producto.pesogb%>">
+                    <input id="disco" type="text" name="pesogb" value="<%=producto.pesogb%>">
                   </p>
                   </p>
                 </p>
@@ -180,11 +180,11 @@
             <div class="itemB3 col-12">
               <p>
                 <label id="titulo" class="subitemB3" for="Trailer">Agregar URL del Trailer</label> <br>
-                <input id="bordes" class="col-12" type="url" name="trailer" value="<%=producto.trailer%>">
+                <input id="trailer" class="col-12" type="url" name="trailer" value="<%=producto.trailer%>">
               </p>
               <p>
                 <label id="titulo" class="subitemB3" for="Resumen">Resumen</label><br>
-                <textarea class="CuadrodeTexto col-12" name="description" ><%=producto.description%></textarea>
+                <textarea id="resumen" class="CuadrodeTexto col-12" name="description" ><%=producto.description%></textarea>
               </p>
               <div>
                 <p>

@@ -7,15 +7,15 @@
           <h4 class="Carga">
             <%- title %>
           </h4>
-          <form id="formuB" class="formuB col-12" action="" method="POST" enctype="multipart/form-data">
-            <div class="errores">
-              <ul></ul>
+          <form id="FormularioB" class="formuB col-12" action="" method="POST" enctype="multipart/form-data">
+            <div id="erro" class="errores">
+              <ul class="errorlist"></ul>
             </div>
             <div class="itemB2 row">
               <div class="ColumnaB1 col-12 col-sm-6 ">
                 <p>
                   <label id="titulo" for="Nombre">Nombre</label>
-                  <input class="nombreP" id="bordes" type="text" name="name">
+                  <input id="nombreP" type="text" name="name">
                 </p>
                 <div>
                   <label id="titulo" for="">Caratula</label>
@@ -31,46 +31,46 @@
                 </div>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Fecha de Estreno</label><br>
-                  <input id="bordes" class="ColumnaText datebirth" type="date" name="data" value="">
+                  <input id="datebirth" class="ColumnaText" type="date" name="data" value="">
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Idiomas</label><br>
-                  <input id="bordes" class="ColumnaText idioma" type="text" name="idioma" value="">
+                  <input id="idiomas" class="ColumnaText" type="text" name="idioma" value="">
                 </p>
                 <p class="ColumnaText">
                   <label id="titulo" for="">Desarrollador</label><br>
-                  <input id="bordes" class="ColumnaText desarrollador" type="text" name="desarrollador" value="">
+                  <input id="desarrollador" class="ColumnaText" type="text" name="desarrollador" value="">
                 </p>
                 
               </div>
               <div class="ColumnaB2 col-12 col-sm-6">
                 <p>
                   <label id="titulo" for="Precio">Precio</label>
-                  <input class="precioP" id="bordes" type="text" name="price">
+                  <input id="precioP" type="text" name="price">
                 </p>
                 <div class="check col-12">
                   <p class="checkbox col-6">
                     <label id="bordes" for="">Plataforma</label><br>
-                    <input id="Plataforma" type="radio" name="plataform" checked="checked" value="Windows">Windows <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="Mac">Mac <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="Play Station">Play Station <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="Xbox">Xbox <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="Nintendo">Nintendo <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="IOS">IOS <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="Android">Android <br>
-                    <input id="Plataforma" type="radio" name="plataform" value="Wii">Wii
+                    <input  type="radio" name="plataform" checked="checked" value="Windows">Windows <br>
+                    <input  type="radio" name="plataform" value="Mac">Mac <br>
+                    <input  type="radio" name="plataform" value="Play Station">Play Station <br>
+                    <input  type="radio" name="plataform" value="Xbox">Xbox <br>
+                    <input  type="radio" name="plataform" value="Nintendo">Nintendo <br>
+                    <input  type="radio" name="plataform" value="IOS">IOS <br>
+                    <input  type="radio" name="plataform" value="Android">Android <br>
+                    <input  type="radio" name="plataform" value="Wii">Wii
                   </p>
                   <p class="checkbox col-6">
                     <label id="bordes" for="">Categorias</label><br>
-                    <input id="categoria" type="radio" name="category" value="Accion">Accion <br>
-                    <input id="categoria" type="radio" name="category" value="Aventura">Aventura <br>
-                    <input id="categoria" type="radio" name="category" value="Deporte">Deporte <br>
-                    <input id="categoria" type="radio" name="category" value="Carrera">Carrera <br>
-                    <input id="categoria" type="radio" name="category" value="Estrategia">Estrategia <br>
-                    <input id="categoria" type="radio" name="category" value="RPG">RPG <br>
-                    <input id="categoria" type="radio" name="category" value="Shooter">Shooter <br>
-                    <input id="categoria" type="radio" name="category" value="Simuladores">Simuladores <br>
-                    <input id="categoria" type="radio" name="category" checked="checked" value="Otros">Otros <br>
+                    <input  type="radio" name="category" value="Accion">Accion <br>
+                    <input  type="radio" name="category" value="Aventura">Aventura <br>
+                    <input  type="radio" name="category" value="Deporte">Deporte <br>
+                    <input  type="radio" name="category" value="Carrera">Carrera <br>
+                    <input  type="radio" name="category" value="Estrategia">Estrategia <br>
+                    <input  type="radio" name="category" value="RPG">RPG <br>
+                    <input  type="radio" name="category" value="Shooter">Shooter <br>
+                    <input  type="radio" name="category" value="Simuladores">Simuladores <br>
+                    <input  type="radio" name="category" checked="checked" value="Otros">Otros <br>
                     
                   </p>
                 </div>
@@ -79,23 +79,23 @@
                   <p>
                     <p class="req">
                       <label id="titulo">Procesador:</label>
-                      <input class="procesador pro" id="bordes" type="text" name="procesador">
+                      <input class="procesador" id="pro" type="text" name="procesador">
                     </p>
                     <p class="req">
                       <label id="titulo">Descuento:</label>
-                      <input class="procesador descuento" id="bordes" type="text" name="discount">
+                      <input class="procesador"  type="text" name="discount">
                     </p>
                     <p class="req">
                       <label id="titulo">Memoria:</label>
-                    <input class="procesador memoria" id="bordes" type="text" name="memoria">
+                    <input class="procesador" id="memoria" type="text" name="memoria">
                   </p>
                     <p class="req">
                       <label id="titulo">Tarjeta Grafica:</label>
-                    <input class="procesador grafico" id="bordes" type="text" name="graficos">
+                    <input class="procesador" id="graficos" type="text" name="graficos">
                   </p>
                     <p class="req">
                       <label id="titulo">Disco Duro:</label>
-                    <input class="procesador disco" id="bordes" type="text" name="pesogb">
+                    <input class="procesador" id="disco" type="text" name="pesogb">
                   </p>
                   </p>
                 </p>
@@ -104,11 +104,11 @@
             <div class="itemB3 col-12">
               <p>
                 <label id="titulo" class="subitemB3" for="Trailer">Agregar URL del Trailer</label> <br>
-                <input id="bordes" class="col-12 trailer" type="url" name="trailer">
+                <input id="trailer" class="col-12" type="url" name="trailer">
               </p>
               <p>
                 <label id="titulo" class="subitemB3" for="Resumen">Resumen</label><br>
-                <textarea class="CuadrodeTexto col-12 resumen" name="description"></textarea>
+                <textarea id="resumen" class="CuadrodeTexto col-12" name="description"></textarea>
               </p>
               <div>
                 <p>
