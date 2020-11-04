@@ -4,9 +4,12 @@
   <body>
     <%- include("partials/header") %>
 
-    <form id="Formu" class="col-12" action="" method="POST">
+    <form id="FormuC" class="col-12" action="" method="POST">
       
-      
+      <div class="errores">
+        <ul></ul>
+      </div>
+
       <div>
         <input class="control col-12" type="email" name="email" id="correo" placeholder="E-mail">
         <small class="text-danger"><%= (typeof errors != 'undefined' && errors.email)?errors.email.msg: "" %> </small>
@@ -38,7 +41,9 @@
     </form>
 
 
-
+    
     <%- include("partials/footer") %>
+    
+    <script src="/js/script-login.js"></script>
 </body>
 </html>

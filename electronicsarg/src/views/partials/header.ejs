@@ -1,93 +1,102 @@
 <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 recursos">
-          <div><a href="">Servicio Tecnico</a></div>
-          <div><a href="">Envio</a></div>
-          <div><a href="">Sucursales</a></div>
-          <div><a href="">Contacto</a></div>
-        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 recursos">
+        <div><a href="">Servicio Tecnico</a></div>
+        <div><a href="">Envio</a></div>
+        <div><a href="">Sucursales</a></div>
+        <div><a href="">Contacto</a></div>
       </div>
-      <div class="row">
-        <div class=" col-1 col-md-2 logo">
-          <a href="/"><img src="/images/logosinfondo.png" alt=""></a>
-        </div>
-          <div class="col-10 col-md-7 buscador">
-            <form action="/detalles/search" method="get" class="search-form">
-              <input type="text" name="search" placeholder="Buscar productos, marcas y más" class="search-form_input">
-              <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
-          </form>
-            </div>
-            
-          
-        <div class=" col-12  col-md-2 botonlogin">
-            
-          <% if (typeof user == "undefined") { %>
-              <li>
-                  <a href="/users/login">Ingresá <i class="fas fa-sign-in-alt "></i></a>
-              </li>
-              <li>
-                  <a href="/users/register">Creá tu cuenta <i class="far fa-address-card "></i></a>
-              </li>
-          <% } else{ %>
-            
-              <li>
-                  <a href="/users/logout">Cerrar sesión <i class="fas fa-sign-in-alt "></i></a>
-              </li>
-              <li>
-                  <a href="/users/profile ">Mis compras <i class="fas fa-shopping-basket "></i></a>
-              </li>
-              
-          <% } %>
-     
+    </div>
+    <div class="row">
+      <div class=" col-1 col-md-2 logo">
+        <a href="/"><img src="/images/logosinfondo.png" alt=""></a>
       </div>
-      
-          
-         <div class="col-12 col-md-12 col-lg-12 nav">
-          <nav class="navbar-expand-md">
-            <button class="navbar-toggler burger" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-            <ul class="menu navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <ul>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categorias
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">TERROR</a>
-                        <a class="dropdown-item" href="#">RPG</a>
-                        <a class="dropdown-item" href="#">INFANTILES</a>
-                      </div>
-                    </li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Historial</a>
-                </li>
-                
-              </ul>
-              <li class="logoshome">
-                <a href="/carrodecompras"><i class="fas fa-shopping-cart"></i></a>
-                <a href="/create"><i class="fas fa-cloud-upload-alt"></i> </a>
-                
-              </li>
-              
-            </div>
-            <div class="col-12 col-md-12 col-lg-12  cuotas">
-              <a href=""><h5 class="mr-2"><%= (user)?user.nick:"Invitado" %> </h5></a>
-              <% if (user) { %>
-                
-                  <a href=""><img src="/images/avatares/<%= user.avatar %> " alt="avatar" width="50px" height="50px" class="avatar"></a>
+      <div class="col-10 col-md-7 buscador">
+        <form action="/detalles/search" method="get" class="search-form">
+          <input type="text" name="search" placeholder="Buscar productos, marcas y más" class="search-form_input">
+          <button type="submit" class="search-form_button"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
 
-              <% } else{%>
-              <a href=""><img src="/images/avatares/default.png" alt="" width="50px" height="50px" class="avatar"></a>
-              <% } %>
+      <div id="cuotas" class="">
+        <a href="">
+          <h5 class="mr-2"><%= (user)?user.nick:"Invitado" %> </h5>
+        </a>
+        <% if (user) { %>
+
+        <a href=""><img src="/images/avatares/<%= user.avatar %> " alt="avatar" width="50px" height="50px"
+            class="avatar"></a>
+
+        <% } else{%>
+        <a href=""><img src="/images/avatares/default.png" alt="" width="50px" height="50px" class="avatar"></a>
+        <% } %>
+        <div id="botlogin" class=" col-8  col-md-2 botonlogin">
+
+          <% if (typeof user == "undefined") { %>
+          <li>
+            <a href="/users/login">Ingresá <i class="fas fa-sign-in-alt "></i></a>
+          </li>
+          <li>
+            <a href="/users/register">Creá tu cuenta <i class="far fa-address-card "></i></a>
+          </li>
+          <% } else{ %>
+
+          <li>
+            <a href="/users/logout">Cerrar sesión <i class="fas fa-sign-in-alt "></i></a>
+          </li>
+          <li>
+            <a href="/users/profile ">Mis compras <i class="fas fa-shopping-basket "></i></a>
+          </li>
+
+          <% } %>
+
         </div>
-          </nav>
-      </div> 
-    
-  </header>
+      </div>
+
+
+
+      <div class="col-12 col-md-12 col-lg-12 nav">
+        <nav class="navbar-expand-md">
+          <button class="navbar-toggler burger" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><i class="fas fa-bars "></i></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="menu navbar-nav mr-auto">
+              <li class="nav-item active">
+                <ul>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Categorias
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">TERROR</a>
+                      <a class="dropdown-item" href="#">RPG</a>
+                      <a class="dropdown-item" href="#">INFANTILES</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Historial</a>
+              </li>
+
+            </ul>
+            <li class="logoshome">
+              <a href="/carrodecompras"><i class="fas fa-shopping-cart"></i></a>
+              <a href="/create"><i class="fas fa-cloud-upload-alt"></i> </a>
+
+            </li>
+
+          </div>
+
+
+          
+        </nav>
+      </div>
+
+</header>
