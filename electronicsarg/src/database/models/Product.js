@@ -19,7 +19,7 @@ module.exports = (sequelize,dataTypes) => {
             type:dataTypes.STRING(45),
         },
         description:{
-            type:dataTypes.STRING(500),
+            type:dataTypes.STRING(1500),
             allowNull:false
         },
         desarrollador:{
@@ -78,7 +78,7 @@ module.exports = (sequelize,dataTypes) => {
             allowNull:false
         },
         graficos:{
-            type:dataTypes.STRING(45),
+            type:dataTypes.STRING(100),
             allowNull:false
         },
         pesogb:{

@@ -108,13 +108,13 @@ header .buscador form{
   }
 }
 /*PRODUCTOS y CARRUSEL*/
-.carrusel{
+#carouselExampleControls{
   
   padding: 20px;
   
   display: none;
 }
-.carrusel h2{
+#carouselExampleControls h2{
   color: white;
 }
 section a .btnvermas{
@@ -191,8 +191,8 @@ footer{
 }
 @media(min-width:768px){
   /*HEADER*/
-  .carrusel{
-    display: inline;
+  #carouselExampleControls{
+    display: block;
   }
   li .logoshome i{
     position: relative;

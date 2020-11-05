@@ -15,7 +15,7 @@
       
       <div class="container-fluid">
         <div class="row">
-          
+          <h2><%- producto.nombre %> </h2>
           <article class="col-12 videodet">
             <iframe width="100%" height="400vh" src= "<%- producto.trailer %>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
           </article>
@@ -26,7 +26,7 @@
             <img src="/images/products/<%- producto.imagen4 %>" class="img">
           </article>
           <article class="col-12 detprod">
-            <h2><%= producto.name %> </h2>
+            
             <h4>Historia</h4>
             <p class="historia"> <%- producto.description %> </p>
             <div class="req">

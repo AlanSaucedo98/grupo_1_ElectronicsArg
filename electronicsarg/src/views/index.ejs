@@ -1,56 +1,74 @@
 <!DOCTYPE html>
-<html >
-  <%- include("partials/head") %> 
+<html>
+<%- include("partials/head") %>
 
-  <body>
-    
-    <%- include("partials/header") %>
-    
-    
-    <section>
+<body>
 
-      
+  <%- include("partials/header") %>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-interval="5000">
+        <img src="/images/carrusel/carrusel1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="5000">
+        <img src="/images/carrusel/carrusel3.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-interval="5000">
+        <img src="/images/carrusel/carrusel2.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 
-      <div class="row productosrec">
-        <div class="col-12 recom">
-          <h2>Todos los Productos</h2>
+  <section>
+
+
+
+    <div class="row productosrec">
+      <div class="col-12 recom">
+        <h2>Todos los Productos</h2>
+      </div>
+
+      <% todos.forEach(producto => { %>
+
+      <div class="col-12 col-md-5 col-lg-3">
+        <div class="contenido">
+          <!--Imagen-->
+          <img src="/images/products/<%- producto.imagen_portada %>  " alt="" class="img-fluid">
+          <article>
+            <!--precio-->
+            <h2>$<%- producto.precio %> </h2>
+            <!--descuento-->
+            <% if (producto.discount != 0) { %>
+            <span><%- producto.discount %>% OFF</span>
+            <% } %>
+            <% if (producto.discount == 0) { %>
+              <span> <br> </span>
+              <% } %>
+            <!--Titulo-->
+            <p><%- producto.nombre %> </p>
+            <!--Boton Ver mas-->
+            <a href="/detalles/<%= producto.id %> " method="GET"><button class="btnvermas" type="submit">Ver
+                Mas</button></a>
+          </article>
         </div>
 
-        <% todos.forEach(producto => { %>
-        
-          <div class="col-12 col-md-5 col-lg-3">
-            <div class="contenido">
-            <!--Imagen-->
-            <img src="/images/products/<%- producto.imagen_portada %>  " alt="" class="img-fluid">
-            <article>
-              <!--precio-->
-              <h2>$<%- producto.precio %> </h2>
-              <!--descuento-->
-              <% if (producto.discount != 0) { %>
-                <span><%- producto.discount %>% OFF</span>
-                <% } %>
-              <!--Titulo-->
-              <p><%- producto.nombre %> </p>
-              <!--Boton Ver mas-->
-              <a href="/detalles/<%= producto.id %> " method="GET"><button class="btnvermas" type="submit">Ver Mas</button></a>
-            </article>
-          </div>
-          
-          </div>
-          <% }) %>
-        </div>
-    </section>
-      
-      <h2>Ofertas del Mes</h2>
-        
-   
+      </div>
+      <% }) %>
+    </div>
+  </section>
 
 
-      
 
-  
-  <%- include("partials/footer") %> 
+  <%- include("partials/footer") %>
 
-</body>  
-  
+</body>
+
 </html>
