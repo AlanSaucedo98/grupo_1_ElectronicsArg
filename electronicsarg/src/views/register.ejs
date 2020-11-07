@@ -50,9 +50,13 @@
             </div>
           </div>
           
-          
+          <p>
+            <input type="checkbox" id="checkrol" name="rol" value="admin">Usuario Administrador
+
+          </p>
+
           <p class="terminos">
-            <input type="checkbox" id="check" name="Acepto el Acuerdo" value="Acepto">Acepto los terminos de Uso, Terminos de Ventas y la politica de privacidad de ElectronicsArg.
+            <input type="checkbox" id="check" class="terminoschek" name="Acepto el Acuerdo" value="Acepto">Acepto los terminos de Uso, Terminos de Ventas y la politica de privacidad de ElectronicsArg.
             <small class="text-danger"><%= (typeof errors != 'undefined' && errors.bases)?errors.bases.msg: "" %> </small>
 
           </p>
@@ -64,7 +68,7 @@
         </form>
       </div>
       <div id="itemimg" class="col-md-5">
-        <img class="imag" src="/images/products/Registro1.png" alt="Portada">
+        <img class="imag" src="/images/Registro1.png" alt="Portada">
       </div>  
     </div>
   </div>

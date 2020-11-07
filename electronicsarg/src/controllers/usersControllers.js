@@ -34,7 +34,7 @@ module.exports = {
                     user :req.body.user,
                     nacimiento:req.body.datebirth,
                     password:bcrypt.hashSync(req.body.password,10),
-                    rol:req.session.user
+                    rol:req.body.rol
                 }
         )
         .then(result => {

@@ -2,6 +2,7 @@
 const db = require('../database/models');
 
 
+
 const fs =require("fs");
 const path =require ("path")
 
@@ -13,18 +14,29 @@ module.exports = {
         res.render('productAdd', { title: 'Carga de Producto' ,user:req.session.user });
     },
     search:function(req,res){
-        let buscar = req.query.search;
-        let resultados=[];
-        dbProducts.forEach(producto=>{
-            if(producto.name.toLowerCase().includes(buscar.toLowerCase())){
-                resultados.push(producto)
+        if(req.query.search == ""){
+            res.redirect('/')
+        }
+
+        let buscar = req.query.search
+
+        db.Products.findAll({
+            where : {
+                nombre :  buscar 
+                
             }
         })
-        res.render('prodSearch',{
-            title:"Resultado de la busqueda",
-            productos:resultados,
-            user:req.session.user
+        .then(result => {
+            res.render('prodSearch', {
+                title: "Resultado de la búsqueda",
+                productosResult: result,
+                user:req.session.user
+            })
         })
+        .catch(err => {
+            res.send(err)
+        })
+       
     },
     
    
@@ -36,9 +48,9 @@ module.exports = {
          db.Products.findOne({
             where:{
                 id:id
-            }
-            
+            }   
         })
+        
         .then(resultado =>{
             //res.send(resultado)// Descomentar linea para ver como llega producto
             res.render("productDetail", {

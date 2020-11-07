@@ -24,9 +24,9 @@ window.addEventListener("load", function () {
             errores.push("El email no es un formato valido")
 
         }
-        
-        
- 
+
+
+
 
 
 
@@ -57,8 +57,12 @@ window.addEventListener("load", function () {
             errores.push("Las contraseñas no coinciden ")
         }
 
+        let terminos = document.querySelector(".terminoschek");
 
 
+        if (!terminos.checked) {
+            errores.push("Debe aceptar los Terminos y Condiciones ")
+        }
 
 
         //COMPRUEBO LOS ERRORES PARA VALIDAR
