@@ -121,6 +121,15 @@ module.exports = {
     },
     actualizar: function(req,res, next){
 
+        let id = req.params.id;
+
+        
+         db.Products.findOne({
+            where:{id:id}   
+        }).then(result =>res.Json(result))
+
+
+
         let aProducto = req.params.id;
         db.Products.update({
             id:db.Products.id,

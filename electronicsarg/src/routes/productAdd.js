@@ -6,23 +6,15 @@ var path = require('path');
 const controller = require('../controllers/productController');
 const sessionUserCheck = require('../middlewares/sessionUserCheck');
 
-let storage = multer.diskStorage({
-    destination:(req,file,callback)=>{
-        callback(null,'public/images/products')
-    },
-    filename:(req,file,callback)=>{
-        callback(null,file.fieldname + Date.now() + path.extname(file.originalname))
-    }
-})
+const upImagesProducts = require('../middlewares/upImagesProducts'); //requiero el modulo que se encarga de guardar las imagenes, vía multer
 
-let upload = multer({storage:storage})
 
 
 router.get('/',sessionUserCheck, controller.index);
-router.post('/',upload.any(),sessionUserCheck, controller.agregar);
+router.post('/',upImagesProducts.any(),sessionUserCheck, controller.agregar);
 
 
-router.put('/edit/:id',upload.any(),controller.actualizar);
+router.put('/edit/:id',upImagesProducts.any(),controller.actualizar);
 
 
 

@@ -81,7 +81,7 @@ module.exports = {
                     rol: user.rol
                 }
                 if(req.body.recordar ){
-                    res.cookie('userMercadoLiebre',req.session.user,{maxAge:1000*60*2})
+                    res.cookie('userElectronicsArg',req.session.user,{maxAge:1000*60*2})
                 }
 
                 res.locals.user = req.session.user;
