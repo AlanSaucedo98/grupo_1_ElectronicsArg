@@ -28,19 +28,31 @@ module.exports = { //exporto un objeto literal con todos los metodos
 
          
     },
-    /*search: function(req, res) {
+    search: function(req, res) {
+        if(req.query.search == ""){
+            res.redirect('/')
+        }
+
         let buscar = req.query.search;
-        let productos = [];
-        dbProduct.forEach( producto => {
-            if (producto.name.toLowerCase().includes(buscar)) {
-                productos.push(producto)
+
+        db.Products.findAll({
+            where : {
+                nombre :   buscar 
             }
         })
-        res.render('products', {
-            title: "Resultado de la búsqueda",
-            productos: productos,
-            user:req.session.user
+        .then(result => {
+            res.render('prodSearch', {
+                title: "Resultado de la búsqueda",
+                productosResult: result,
+                user:req.session.user
+            })
         })
-    },*/
+        .catch(err => {
+            res.send(err)
+        })
+       
+       
+   
+    }
     
 }

@@ -22,8 +22,7 @@ module.exports = {
 
         db.Products.findAll({
             where : {
-                nombre :  buscar 
-                
+                nombre :   buscar 
             }
         })
         .then(result => {
@@ -141,12 +140,12 @@ module.exports = {
             idioma: req.body.idioma,
             data: req.body.data,
             description: req.body.description,
-            imagen_portada: (req.files[0])?req.files[0].filename:"default-image.png",
+            imagen_portada: (req.files[0])?req.files[0].filename:req.files[0],
             trailer: req.body.trailer,
-            imagen1: (req.files[0])?req.files[0].filename:"default-image.png",
-            imagen2: (req.files[1])?req.files[1].filename:"default-image.png",
-            imagen3: (req.files[2])?req.files[2].filename:"default-image.png",
-            imagen4: (req.files[3])?req.files[3].filename:"default-image.png",
+            imagen1: (req.files[0])?req.files[0].filename:req.files[0],
+            imagen2: (req.files[1])?req.files[1].filename:req.files[1],
+            imagen3: (req.files[2])?req.files[2].filename:req.files[2],
+            imagen4: (req.files[3])?req.files[3].filename:req.files[3],
             labels:req.body.category,
             desarrollador:req.body.desarrollador,
             editor: req.body.editor,
