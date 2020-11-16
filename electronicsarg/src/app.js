@@ -16,6 +16,7 @@ var usersRouter = require('./routes/users');
 var productCartRouter = require("./routes/productCart");
 var productAddRouter = require("./routes/productAdd");
 var productRouter = require("./routes/product");
+var pagoRouter = require("./routes/pago")
 
 const editRouter = require("./routes/productEdit")
 
@@ -46,7 +47,7 @@ app.use('/create', productAddRouter)
 app.use('/users', usersRouter);
 app.use("/carrodecompras", productCartRouter)
 app.use("/editar",editRouter)
-
+app.use("/pagar",pagoRouter)
 
 
 // catch 404 and forward to error handler

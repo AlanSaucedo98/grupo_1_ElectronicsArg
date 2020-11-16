@@ -88,8 +88,8 @@
           <a href="/carrodecompras"><button type="button" class="btn btn-secondary"><i
                 class="fas fa-cart-plus"></i></button></a>
           <a href="/editar/<%= producto.id %> "><button type="button" class="btn btn-secondary">Editar</button></a>
-          <form action="/detalles/delete/<%= producto.id %>?_method=DELETE" method="POST">
-            <button class="btn btn-outline-light">
+          <form action="/detalles/delete/<%= producto.id %>?_method=DELETE" method="POST" id="formElim">
+            <button class="btn btn-outline-light" id="btnElim">
               <h4 class="fas fa-trash-alt text-danger"></h4>
             </button>
           </form>
@@ -114,9 +114,13 @@
 
   <%- include("partials/footer") %>
 
+  
 
+ 
 
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+  <script src="/js/prodDetail-script.js"></script>
 </body>
 
 </html>
