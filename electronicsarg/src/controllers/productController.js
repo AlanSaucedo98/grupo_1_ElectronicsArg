@@ -1,6 +1,7 @@
 
 const db = require('../database/models');
 
+const { Op } = require("sequelize");
 
 
 const fs =require("fs");
@@ -10,7 +11,7 @@ const { resourceUsage } = require('process');
 module.exports = {
 
     index: function(req, res, next) {
-        console.log(db.Products)
+        //console.log(db.Products)
         res.render('productAdd', { title: 'Carga de Producto' ,user:req.session.user });
     },
     search:function(req,res){
@@ -21,8 +22,10 @@ module.exports = {
         let buscar = req.query.search
 
         db.Products.findAll({
-            where : {
-                nombre :   buscar 
+            where:{
+                nombre:{
+                    [Op.substring]:buscar
+                }
             }
         })
         .then(result => {

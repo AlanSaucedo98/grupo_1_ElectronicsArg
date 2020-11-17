@@ -78,7 +78,7 @@ module.exports = (sequelize,dataTypes) => {
             allowNull:false
         },
         graficos:{
-            type:dataTypes.STRING(100),
+            type:dataTypes.STRING(300),
             allowNull:false
         },
         pesogb:{

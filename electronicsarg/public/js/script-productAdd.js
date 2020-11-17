@@ -77,7 +77,18 @@ window.addEventListener("load", function () {
 
         }
 
-        
+
+        let imagen1 = document.getElementById("file1")
+
+        let regExExtensions = /(.jpg|.jpeg|.png|.gif)$/i;
+
+
+
+        if (!regExExtensions.exec(imagen1.value)) {
+            errores.push = "Solo imagenes con extension jpg, jpeg, png, o gif"
+
+        }
+
 
 
 
