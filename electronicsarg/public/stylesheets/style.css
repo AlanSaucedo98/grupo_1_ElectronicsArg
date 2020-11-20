@@ -41,6 +41,13 @@ header .cuotas a{
 header #cuotas a{
   color: white;
 }
+header #cuotas {
+  margin-top: 10px;
+}
+h5.mr-2 {
+  margin-left: 10px;
+}
+
 .logo img{
   width: 110px;
   height: 110px;
@@ -754,10 +761,6 @@ button.trash{
   div .trash{
     display: flex;
     justify-content: flex-end;
-  }
-
-  .h5, h5{
-    padding-right: 10px
   }
 
 
