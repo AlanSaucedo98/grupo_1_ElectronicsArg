@@ -45,7 +45,7 @@ header #cuotas {
   margin-top: 10px;
 }
 h5.mr-2 {
-  margin-left: 10px;
+  margin-left: 8px;
 }
 
 .logo img{
@@ -70,7 +70,7 @@ header #botlogin {
 header .botonlogin a{
   display: block;
   color: white;
- padding: 10px;
+  padding: 5px;
 }
 .btn-secondary {
   border: 0px;
@@ -79,9 +79,9 @@ header .botonlogin a{
 }
 
 header .nav{
- display: flex;
- justify-content: space-around;
- padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
 }
 header .nav a{
   color: white;
@@ -109,10 +109,12 @@ header .buscador form{
   padding-left: 50px;
 }
 @media(min-width:768px){
-  header #botlogin   {
-    display: contents;
-    
-  }
+header #botlogin   {
+  display: contents;
+}
+header .botonlogin a{
+  padding-top: 10px;
+}
 }
 /*PRODUCTOS y CARRUSEL*/
 #carouselExampleControls{
