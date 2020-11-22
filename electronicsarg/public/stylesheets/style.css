@@ -9,6 +9,9 @@ body{
   color: whitesmoke;
   text-align: center;
 }
+.tituloCarrito{
+  color:red
+}
 a{
   text-decoration: none;
   

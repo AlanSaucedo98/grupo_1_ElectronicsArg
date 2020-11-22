@@ -7,13 +7,13 @@
   <%- include("partials/header") %>
   <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
-      <div class="carousel-item active" data-interval="5000">
+      <div class="carousel-item active" data-interval="3000">
         <img src="/images/carrusel/carrusel1.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-interval="5000">
+      <div class="carousel-item" data-interval="3000">
         <img src="/images/carrusel/carrusel3.jpg" class="d-block w-100" alt="...">
       </div>
-      <div class="carousel-item" data-interval="5000">
+      <div class="carousel-item" data-interval="3000">
         <img src="/images/carrusel/carrusel2.jpg" class="d-block w-100" alt="...">
       </div>
     </div>
@@ -28,7 +28,7 @@
   </div>
 
 
-  
+        <!-- Seccion Todos Los Productos-->
   <section>
 
 
@@ -52,8 +52,8 @@
             <span><%- producto.discount %>% OFF</span>
             <% } %>
             <% if (producto.discount == 0) { %>
-              <span> <br> </span>
-              <% } %>
+            <span> <br> </span>
+            <% } %>
             <!--Titulo-->
             <p><%- producto.nombre %> </p>
             <!--Boton Ver mas-->
@@ -91,8 +91,8 @@
             <span><%- producto.discount %>% OFF</span>
             <% } %>
             <% if (producto.discount == 0) { %>
-              <span> <br> </span>
-              <% } %>
+            <span> <br> </span>
+            <% } %>
             <!--Titulo-->
             <p><%- producto.nombre %> </p>
             <!--Boton Ver mas-->
@@ -107,7 +107,89 @@
   </section>
 
 
+  <!--Seccion Categorias accion-->
+  <section>
 
+
+
+    <div class="row productosrec">
+      <div class="col-12 recom">
+        <h2><a name="seccionAccion">Accion</a></h2>
+      </div>
+
+      <% todos.forEach(producto => { %>
+      <% if (producto.labels == "Accion") { %>
+
+
+      <div class="col-12 col-md-5 col-lg-3">
+        <div class="contenido" id="productos">
+          <!--Imagen-->
+          <img src="/images/products/<%- producto.imagen_portada %>  " alt="" class="img-fluid">
+          <article>
+            <!--precio-->
+            <h2>$<%- producto.precio %> </h2>
+            <!--descuento-->
+            <% if (producto.discount != 0) { %>
+            <span><%- producto.discount %>% OFF</span>
+            <% } %>
+            <% if (producto.discount == 0) { %>
+            <span> <br> </span>
+            <% } %>
+            <!--Titulo-->
+            <p><%- producto.nombre %> </p>
+            <!--Boton Ver mas-->
+            <a href="/detalles/<%= producto.id %> " method="GET"><button class="btnvermas" type="submit">Ver
+                Mas</button></a>
+          </article>
+        </div>
+
+      </div>
+      <% } %>
+      <% }) %>
+    </div>
+  </section>
+
+  <!--Seccion Terror -->
+  <section>
+
+
+
+    <div class="row productosrec">
+      <div class="col-12 recom">
+        <h2><a name="seccionTerror">Terror</a></h2>
+      </div>
+
+      <% todos.forEach(producto => { %>
+      <% if (producto.labels == "Terror") { %>
+
+
+      <div class="col-12 col-md-5 col-lg-3">
+        <div class="contenido" id="productos">
+          <!--Imagen-->
+          <img src="/images/products/<%- producto.imagen_portada %>  " alt="" class="img-fluid">
+          <article>
+            <!--precio-->
+            <h2>$<%- producto.precio %> </h2>
+            <!--descuento-->
+            <% if (producto.discount != 0) { %>
+            <span><%- producto.discount %>% OFF</span>
+            <% } %>
+            <% if (producto.discount == 0) { %>
+            <span> <br> </span>
+            <% } %>
+            <!--Titulo-->
+            <p><%- producto.nombre %> </p>
+            <!--Boton Ver mas-->
+            <a href="/detalles/<%= producto.id %> " method="GET"><button class="btnvermas" type="submit">Ver
+                Mas</button></a>
+          </article>
+        </div>
+
+      </div>
+      <% } %>
+      <% }) %>
+    </div>
+  </section>
   <%- include("partials/footer") %>
 
 </body>
